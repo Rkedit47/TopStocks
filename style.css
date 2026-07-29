@@ -19,7 +19,7 @@ img {
   background-color: #09090b;
 }
 .feature-sec .container {
-  padding: 5rem 0rem;
+  padding: 5rem 1rem;
   color: #ffffffcc;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -179,6 +179,7 @@ img {
 }
 /* Responsive */
 @media (max-width: 640px) {
+
   .feature-right-txt {
     bottom: 0.75rem;
     left: 0.75rem;
@@ -188,7 +189,7 @@ img {
   }
 }
 @media (max-width: 448px) {
-  .feature-right-txt {
+  .feature-right-txt{
     font-size: 8px;
   }
 }
@@ -842,7 +843,7 @@ img {
   background-color: #ffffff;
   border: 1px solid #e4e4e7;
   border-radius: 8px;
-  width: 95%;
+  width: 100%;
   height: 3rem;
   margin-top: 0.75rem;
 }
@@ -1068,12 +1069,11 @@ img {
   }
 
   .contact-sec-sub-container form label {
-    flex-direction: column;
     gap: 0.5rem;
   }
 
   .contact-sec-sub-container form label input {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   .disclosure-card {
@@ -1098,11 +1098,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .flagship-sec-right figure {
-    margin-top: -1.27rem;
-    margin-left: -1.27rem;
-    margin-right: -1.27rem;
-  }
   .quick-card-top,
   .quick-card-bottom,
   .quick-card-txt,
