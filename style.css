@@ -179,7 +179,6 @@ img {
 }
 /* Responsive */
 @media (max-width: 640px) {
-
   .feature-right-txt {
     bottom: 0.75rem;
     left: 0.75rem;
@@ -189,7 +188,7 @@ img {
   }
 }
 @media (max-width: 448px) {
-  .feature-right-txt{
+  .feature-right-txt {
     font-size: 8px;
   }
 }
@@ -1099,6 +1098,11 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .flagship-sec-right figure {
+    margin-top: -1.27rem;
+    margin-left: -1.27rem;
+    margin-right: -1.27rem;
+  }
   .quick-card-top,
   .quick-card-bottom,
   .quick-card-txt,
