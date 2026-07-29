@@ -1,6 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
 }
 /* GERNAL CLASSES */
 .container {
@@ -173,7 +177,22 @@
   top: -2.25rem;
   left: 0.75rem;
 }
+/* Responsive */
+@media (max-width: 640px) {
 
+  .feature-right-txt {
+    bottom: 0.75rem;
+    left: 0.75rem;
+    max-width: calc(100% - 1.5rem);
+    font-size: 9px;
+    padding: 0.25rem 0.6rem;
+  }
+}
+@media (max-width: 448px) {
+  .feature-right-txt{
+    font-size: 8px;
+  }
+}
 /* SERVICE SECTION */
 .service-sec {
   background-color: #f4f4f5;
@@ -203,7 +222,7 @@
   letter-spacing: -0.045rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  color: 09090b;
+  color: #09090b;
   font-weight: 700;
   margin-top: 0.25rem;
 }
@@ -582,7 +601,7 @@
 }
 /* PROD0UCT SECTION */
 .product-sec .container {
-  padding: 5rem 0rem;
+  padding: 5rem 1rem;
 }
 .product-sec .container h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -677,7 +696,7 @@
   border-top: 1px solid #e4e4e7;
 }
 .chart-sec .container {
-  padding: 5rem 0rem;
+  padding: 5rem 1rem;
 }
 .chart-sec-top {
   display: flex;
@@ -768,7 +787,7 @@
 }
 /* CONTACT SECTION */
 .contact-sec {
-  padding: 5rem 0rem;
+  padding: 5rem 1rem;
 }
 .contact-sec .container {
   padding: 3rem;
@@ -879,7 +898,7 @@
   border-top: 4px solid #e9590c;
 }
 .disclosure-sec .container {
-  padding: 5rem 0rem;
+  padding: 5rem 1rem;
 }
 .disclosure-sec h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -964,4 +983,143 @@
 }
 .disclosure-sec-btn a:hover {
   background-color: #ffffff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .feature-sec .container,
+  .opportunity-sec .container,
+  .flagship-sec .container {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
+
+  .opportunity-sec-right {
+    position: static;
+  }
+
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box-parent {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .feature-sec .container {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .feature-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature-left-txt span {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .feature-left-stat {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-left-btn {
+    flex-direction: column;
+  }
+
+  .service-box-parent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-card-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-sec-top p {
+    max-width: 100%;
+  }
+
+  .interest-sec-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-sec-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contact-sec .container {
+    padding: 1.5rem;
+  }
+
+  .contact-sec-sub-container form div {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sec-bottom-input {
+    width: 100%;
+  }
+
+  .contact-sec-sub-container form label {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-sec-sub-container form label input {
+    margin-top: 0;
+  }
+
+  .disclosure-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-left h4 {
+    font-size: 0.65rem;
+  }
+
+  .feature-left h1 {
+    font-size: 2rem;
+  }
+
+  .feature-left-stat div p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .service-box-parent {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-card-top,
+  .quick-card-bottom,
+  .quick-card-txt,
+  .product-card-txt,
+  .opportunity-sec-right,
+  .flagship-sec-right {
+    padding: 1.25rem;
+  }
+
+  .opportunity-sec-left h2,
+  .interest-sec-top h2,
+  .flagship-sec-left h2,
+  .product-sec .container h2,
+  .chart-sec-top-left h2,
+  .contact-sec-sub-container h2,
+  .disclosure-sec h2 {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+
+  .contact-sec-sub-container form button {
+    font-size: 0.95rem;
+  }
 }
