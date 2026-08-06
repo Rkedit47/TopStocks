@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", system-ui, sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.2dvw 1dvw ;
+    border-bottom: .1dvw solid rgb(208, 206, 206);
+}
+.navbar .logo-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2dvw;
+
+}
+.navbar .logo-options .logo h1{
+    color: #32a46f;
+    font-size: 1.35dvw;
+}
+.navbar .logo-options .options{
+    display: flex;
+    flex-direction: row;
+    gap: 1.9dvw;
+}
+.navbar .logo-options .options a{
+    text-decoration: none;
+    color: gray;
+    font-size: .95dvw;
+    font-weight: 700;
+    border-radius: .8dvw;
+    padding: .7dvw 1dvw ;
+    transition: background 0.3s ease;
+
+}
+.navbar .logo-options .options a:hover{
+    color: white;
+    background-color: #32a46f;
+
+}
+.navbar .login-signin{
+    display: flex;
+    flex-direction: row;
+    gap: 1dvw;
+}
+.navbar .login-signin .login{
+    border: none;
+    outline: none;
+    background-color: #32a46f;
+    padding: .7dvw 1.2dvw ;
+    border-radius: .8dvw;
+        color: white;
+    font-weight: 700;
+
+
+}
+.navbar .login-signin .create{
+    background-color: #32a46f;
+    border: .1dvw solid #1f985f;
+    padding: .7dvw 1dvw ;
+    color: white;
+    font-weight: 700;
+    border-radius: .8dvw;
+}
+
+/* ///////////////////////////Main page/////////////////// */
+.stock-alert{
+    display: flex;
+    flex-direction: column;
+    padding: 7dvw 1dvw;
+}
+.stock-alert .date{
+    font-size: 1dvw;
+    font-weight: 500;
+    color: gray;
+}
+.stock-alert div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4dvw;
+}
+.stock-alert div h1{
+    font-size: 3.35dvw;
+}
+.stock-alert div h1 .nasdaq{
+    color: gray;
+}
+.stock-alert div h1 .nasdaq .cvkd{
+    color: #1f985f;
+}
+.stock-alert .desc{
+    color: rgb(107, 107, 107);
+    font-size: 1.27dvw;
+    padding-right: 42dvw;
+    line-height: 2dvw;
+}
+.stock-alert div button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10dvw;
+    padding: .9dvw;
+    outline: none;
+    border: none;
+    gap: 1dvw;
+    color: rgb(59, 58, 58);
+    font-weight: 600;   
+}
+
+/* ////////////////////////////LATEST NEWS////////////// */
+    .bottom{
+        padding: 0 1dvw;
+    }
+    .latest-news{
+        width: 23.1%;
+        border: .1dvw solid rgb(32, 32, 32);
+        padding: 1.5dvw;
+    }
+    .latest-news h1{
+        font-size: 1.4dvw;
+    }
+    .latest-news div{
+        padding: 1dvw;
+    }
+    .latest-news div .one{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .latest-news div .one p{
+        font-size: .9dvw;
+        font-weight: 600;
+        background-color: rgb(235, 232, 232);
+        padding: .3dvw .5dvw;
+        color:  rgb(38, 37, 37);
+        cursor: pointer;
+    }
+    .latest-news div .desc{
+        font-size: 1dvw;
+        font-weight: 500;
+        line-height: 1.7dvw;
+    }
+    .latest-news div .desc:hover{
+        color: #1f985f;
+        background-color: rgb(241, 240, 240);
+        cursor: pointer;
+    }
+    .latest-news div div{
+        display: flex;
+        flex-direction: row;
+        gap: .5dvw;
+        font-size: .9dvw;
+        align-items: center;
+        color: gray;
+    }
+    .latest-news div div p{
+        font-size: .9dvw;
+    }
+
+
+
+    .stock-information{
+        width: 23.1%;
+        border: .1dvw solid rgb(32, 32, 32);
+        
+    }
