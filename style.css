@@ -16,7 +16,6 @@ img {
   justify-content: space-between;
   background-color: white;
   padding: 1.2dvw 7dvw;
-
 }
 
 .navbar-logo {
@@ -24,12 +23,12 @@ img {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  gap: .5dvw;
+  gap: 0.5dvw;
 }
 
 .nav-logo-bar {
   background-color: rgb(214, 213, 213);
-  width: .1dvw;
+  width: 0.1dvw;
   height: 1.5dvw;
 }
 
@@ -40,8 +39,8 @@ img {
 
 .navbar-logo p {
   color: grey;
-  font-size: .65dvw;
-  letter-spacing: .13dvw;
+  font-size: 0.65dvw;
+  letter-spacing: 0.13dvw;
   font-weight: 600;
 }
 
@@ -50,24 +49,24 @@ img {
   flex-direction: row;
   gap: 2dvw;
   font-weight: 700;
-  letter-spacing: .05dvw;
+  letter-spacing: 0.05dvw;
   align-items: center;
 }
 
 .nav-options a {
   text-decoration: none;
   color: rgb(70, 69, 69);
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav-options a:hover {
   color: black;
   transform: scale(1.02);
 }
-
-
 
 /* GERNAL CLASSES */
 .container {
@@ -262,7 +261,6 @@ img {
 
 /* Responsive */
 @media (max-width: 640px) {
-
   .feature-right-txt {
     bottom: 0.75rem;
     left: 0.75rem;
@@ -1178,7 +1176,6 @@ img {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
-
   .feature-sec .container,
   .opportunity-sec .container,
   .flagship-sec .container {
@@ -1271,8 +1268,6 @@ img {
   .disclosure-card {
     padding: 1.25rem;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -1332,7 +1327,6 @@ img {
   align-items: flex-end;
   justify-content: space-around;
   gap: 2dvw;
-
 }
 
 .dev-top-left {
@@ -1345,11 +1339,11 @@ img {
 .top-left-head {
   display: flex;
   flex-direction: column;
-  gap: .8dvw;
+  gap: 0.8dvw;
 }
 
 .top-left-head p {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   color: #ff5900;
   font-weight: 700;
   letter-spacing: 0.14dvw;
@@ -1369,9 +1363,9 @@ img {
 .top-left-bottom .bottom-date {
   display: flex;
   flex-direction: row;
-  gap: .4dvw;
+  gap: 0.4dvw;
   letter-spacing: 0.1dvw;
-  font-size: .95dvw;
+  font-size: 0.95dvw;
   align-items: center;
   font-weight: 600;
   color: #3b3b3b;
@@ -1387,7 +1381,7 @@ img {
 }
 
 .top-left-bottom p {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   letter-spacing: 0.1dvw;
   line-height: 1.6dvw;
   font-weight: 600;
@@ -1397,10 +1391,10 @@ img {
 .top-left-bottom button {
   width: 16dvw;
   font-weight: 600;
-  padding: .8dvw 1dvw;
+  padding: 0.8dvw 1dvw;
   background-color: white;
-  border: .1dvw solid rgb(199, 198, 198);
-  border-radius: .5dvw;
+  border: 0.1dvw solid rgb(199, 198, 198);
+  border-radius: 0.5dvw;
 }
 
 .top-right {
@@ -1409,7 +1403,6 @@ img {
   color: white;
   padding: 2.5dvw;
   border-radius: 1.5dvw;
-
 }
 
 .top-right .right-head {
@@ -1421,14 +1414,14 @@ img {
 }
 
 .top-right .right-head h1 {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   letter-spacing: 0.1dvw;
   text-transform: uppercase;
-  color: #E9590C;
+  color: #e9590c;
 }
 
 .top-right .right-head p {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   letter-spacing: 0.1dvw;
   line-height: 1.5dvw;
 }
@@ -1439,8 +1432,6 @@ img {
   color: #7e7d7d;
 }
 
-
-
 /* //////////////////////MORE  RECENT HEADLINES///////// */
 
 .headlines {
@@ -1450,12 +1441,11 @@ img {
 }
 
 .headlines .info {
-  font-size: .8dvw;
+  font-size: 0.8dvw;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1dvw;
-  color: #E9590C;
-
+  color: #e9590c;
 }
 
 .headlines .boxes {
@@ -1469,25 +1459,24 @@ img {
   width: 49%;
   text-decoration: none;
   color: black;
-  border: .1dvw solid rgb(204, 202, 202);
+  border: 0.1dvw solid rgb(204, 202, 202);
   border-radius: 1dvw;
   padding: 1.5dvw;
   display: flex;
   flex-direction: column;
   gap: 1dvw;
-
 }
 
 .boxes .box:hover {
-  border: .1dvw solid orangered;
-  color: #E9590C;
+  border: 0.1dvw solid orangered;
+  color: #e9590c;
 }
 
 .boxes .box div {
   display: flex;
   flex-direction: row;
-  gap: .6dvw;
-  font-size: .8dvw;
+  gap: 0.6dvw;
+  font-size: 0.8dvw;
   font-weight: 600;
   letter-spacing: 0.1dvw;
   text-align: center;
@@ -1520,7 +1509,7 @@ img {
 }
 
 .boxes .box .read-more {
-  font-size: .85dvw;
+  font-size: 0.85dvw;
   color: gray;
 }
 
@@ -1533,16 +1522,15 @@ img {
 .catalyst-header {
   display: flex;
   flex-direction: column;
-  gap: .6dvw;
+  gap: 0.6dvw;
   padding: 4dvw 0;
 }
 
 .catalyst .looking {
-  font-size: .9dvw;
-  color: #E9590C;
+  font-size: 0.9dvw;
+  color: #e9590c;
   font-weight: 700;
-  letter-spacing: .08dvw;
-
+  letter-spacing: 0.08dvw;
 }
 
 .catalyst .main-heading {
@@ -1563,18 +1551,17 @@ img {
   display: flex;
   flex-direction: row;
   gap: 2.5dvw;
-
 }
 
 .list-data {
   display: flex;
   flex-direction: column;
-  gap: .7dvw;
+  gap: 0.7dvw;
 }
 
 .list .list-para2 {
   align-self: flex-end;
-  margin-right: .01dvw;
+  margin-right: 0.01dvw;
 }
 
 .data-title {
@@ -1601,8 +1588,7 @@ img {
 .list-data .data-date {
   display: flex;
   flex-direction: row;
-  gap: .5dvw;
-
+  gap: 0.5dvw;
 }
 
 .list-data .data-date img {
@@ -1610,19 +1596,17 @@ img {
   height: 1.2dvw;
 }
 
-
 .list-data .data-date p {
-  color: #E9590C;
-  font-size: .85dvw;
+  color: #e9590c;
+  font-size: 0.85dvw;
   font-weight: bold;
   letter-spacing: 0.15dvw;
 }
 
-
 .list-sidebar {
   width: 0.1dvw;
   /* background-color: #facbb1; */
-  background: linear-gradient(to bottom, #E9590C, #facbb1);
+  background: linear-gradient(to bottom, #e9590c, #facbb1);
   position: relative;
 }
 
@@ -1652,22 +1636,20 @@ img {
 }
 
 .sidebar-dot h1 {
-  width: .7dvw;
-  height: .7dvw;
+  width: 0.7dvw;
+  height: 0.7dvw;
   border-radius: 50%;
-  background-color: #E9590C;
-
+  background-color: #e9590c;
 }
-
 
 /* ////////////////////////CATALYST DELAY////////WARNING///////// */
 
 .catalyst .catalyst-delay {
-  font-size: .95dvw;
+  font-size: 0.95dvw;
   letter-spacing: 0.15dvw;
   padding: 1.3dvw;
   border: 0.1dvw solid rgb(169, 209, 241);
-  border-radius: .7dvw;
+  border-radius: 0.7dvw;
   background-color: rgb(235, 237, 253);
   color: gray;
 }
@@ -1682,8 +1664,6 @@ img {
   border-top: 0.15dvw solid rgb(245, 240, 240);
   border-bottom: 0.15dvw solid rgb(245, 240, 240);
   background-color: rgb(234, 240, 241);
-
-
 }
 
 .bullcase .bull-head {
@@ -1693,11 +1673,10 @@ img {
 }
 
 .bullcase .bull-head p {
-  color: #E9590C;
-  font-size: .9dvw;
+  color: #e9590c;
+  font-size: 0.9dvw;
   font-weight: 900;
   letter-spacing: 0.2dvw;
-
 }
 
 .bullcase .bull-head h1 {
@@ -1723,15 +1702,14 @@ img {
   color: rgb(31, 235, 173);
   font-weight: bolder;
   gap: 1dvw;
-
 }
 
 .bullcase .bull-box .checkbox {
   color: rgb(31, 235, 173);
   border: 0.2dvw solid rgb(31, 235, 173);
-  padding: 0dvw .2dvw;
-  border-radius: .7dvw;
-  font-size: .8dvw;
+  padding: 0dvw 0.2dvw;
+  border-radius: 0.7dvw;
+  font-size: 0.8dvw;
 }
 
 .bullcase .bull-box h1 {
@@ -1747,9 +1725,8 @@ img {
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  gap: .8dvw;
+  gap: 0.8dvw;
 }
-
 
 /* ///////////////////////BOTTOM LINE/////////////////// */
 .bottom-line {
@@ -1762,8 +1739,8 @@ img {
 }
 
 .bottom-line .bottom-info {
-  color: #E9590C;
-  font-size: .85dvw;
+  color: #e9590c;
+  font-size: 0.85dvw;
   font-weight: 700;
   letter-spacing: 0.2dvw;
 }
@@ -1790,7 +1767,7 @@ img {
 .bottom-line .border {
   width: 10dvw;
   height: 0.1dvw;
-  background-color: #E9590C;
+  background-color: #e9590c;
   align-self: center;
 }
 
@@ -1807,7 +1784,6 @@ img {
   padding: 6dvw 7dvw;
   gap: 2dvw;
   border-bottom: 0.1dvw solid rgb(221, 218, 218);
-
 }
 
 .nmb-head {
@@ -1819,11 +1795,10 @@ img {
 }
 
 .head-heading {
-  font-size: .9dvw;
-  color: #E9590C;
+  font-size: 0.9dvw;
+  color: #e9590c;
   font-weight: 800;
   letter-spacing: 0.3dvw;
-
 }
 
 .head-title {
@@ -1880,7 +1855,6 @@ img {
 .nmb-box .nmb-desc {
   font-size: 0.8dvw;
 }
-
 
 .nmb .figure {
   font-size: 1dvw;
@@ -1959,7 +1933,6 @@ img {
   font-size: 0.7dvw;
 }
 
-
 /* ////////////////////////////////////REQUIRED READING//////////////// */
 
 .req {
@@ -1972,13 +1945,13 @@ img {
 .req-head {
   display: flex;
   flex-direction: column;
-  gap: .5dvw;
+  gap: 0.5dvw;
 }
 
 .req-head p {
   text-transform: uppercase;
-  font-size: .9dvw;
-  color: #E9590C;
+  font-size: 0.9dvw;
+  color: #e9590c;
   letter-spacing: 0.18dvw;
   font-weight: 600;
 }
@@ -2015,7 +1988,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5dvw;
-
 }
 
 .req-box div h2 {
@@ -2037,11 +2009,10 @@ img {
   font-size: 1.15dvw;
   letter-spacing: 0.05dvw;
   line-height: 1.7dvw;
-
 }
 
 .req-box div .link {
-  color: #E9590C;
+  color: #e9590c;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -2055,8 +2026,8 @@ img {
 .req .policy a {
   font-size: 1dvw;
   font-weight: 600;
-  padding: .8dvw 1dvw;
-  border-radius: .6dvw;
+  padding: 0.8dvw 1dvw;
+  border-radius: 0.6dvw;
   text-decoration: none;
   color: rgb(32, 32, 32);
   background-color: rgb(218, 214, 214);
@@ -2081,7 +2052,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
   padding: 4dvw 7dvw;
-
 }
 
 .footer-row .firstdiv {
@@ -2093,11 +2063,11 @@ img {
 }
 
 .footer-row .firstdiv div h1 {
-  color: #E9590C;
+  color: #e9590c;
 }
 
 .footer-row .firstdiv p {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   letter-spacing: 0.05dvw;
 }
 
@@ -2109,43 +2079,40 @@ img {
   width: 25dvw;
   display: flex;
   flex-direction: row;
-  gap: .4dvw;
-
+  gap: 0.4dvw;
 }
 
 .footer-row .firstdiv .logo div img {
-  background-color: #E9590C;
-  border-radius: .6dvw;
-
+  background-color: #e9590c;
+  border-radius: 0.6dvw;
 }
 
 .footer-row .firstdiv .logo .written h1 {
   font-size: 1.4dvw;
-  padding: .2dvw 0;
+  padding: 0.2dvw 0;
 }
 
 .footer-row .firstdiv .logo .written p {
-  font-size: .9dvw;
+  font-size: 0.9dvw;
 }
 
 .footer-row .second {
-  font-size: .93dvw;
+  font-size: 0.93dvw;
   display: flex;
   flex-direction: column;
   gap: 1dvw;
 }
 
 .footer-row div h2 {
-  font-size: .93dvw;
-  color: #E9590C;
+  font-size: 0.93dvw;
+  color: #e9590c;
 }
-
 
 .footer .information {
   display: flex;
   flex-direction: column;
   gap: 1.8dvw;
-  font-size: .9dvw;
+  font-size: 0.9dvw;
   line-height: 1.3dvw;
   padding-right: 20dvw;
   padding-left: 7dvw;
@@ -2153,10 +2120,7 @@ img {
   padding-bottom: 3dvw;
 }
 
-
-
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
   .navbar {
     padding: 2.2dvw;
   }
@@ -2166,7 +2130,7 @@ img {
   }
 
   .nav-logo-bar {
-    width: .16dvw;
+    width: 0.16dvw;
     height: 5dvw;
   }
 
@@ -2179,9 +2143,6 @@ img {
     text-decoration: none;
     color: black;
   }
-
-
-
 
   /* /////////////////////////DEVELOPMENT//////////////////// */
   .development {
@@ -2231,7 +2192,7 @@ img {
 
   .top-left-bottom button {
     width: 25dvw;
-    padding: .8dvw 1dvw;
+    padding: 0.8dvw 1dvw;
   }
 
   .top-right {
@@ -2255,7 +2216,6 @@ img {
   .top-right .summary {
     font-size: 1.5dvw;
   }
-
 
   /* ///////////////////////RECENT HEADLINES////////////////////// */
 
@@ -2305,14 +2265,10 @@ img {
     color: #3b3b3b;
   }
 
-
-
-
   /* /////////////////////CATALYST //////////////////////// */
 
   .catalyst {
     padding: 10dvw 3dvw;
-
   }
 
   .catalyst .catalyst-header {
@@ -2338,7 +2294,6 @@ img {
     display: flex;
     flex-direction: row;
     gap: 4.5dvw;
-
   }
 
   .list-data {
@@ -2352,7 +2307,7 @@ img {
 
   .list-data .data-date p {
     font-size: 1.6dvw;
-    padding-top: .2dvw;
+    padding-top: 0.2dvw;
   }
 
   .data-title {
@@ -2390,7 +2345,7 @@ img {
   .sidebar-dot {
     width: 1.5dvw;
     height: 1.5dvw;
-    background-color:white;
+    background-color: white;
     top: 3dvw;
   }
 
@@ -2400,7 +2355,7 @@ img {
   }
 
   .list .list-para2 {
-    margin-right: .2dvw;
+    margin-right: 0.2dvw;
   }
 
   .catalyst .catalyst-delay {
@@ -2408,12 +2363,11 @@ img {
     padding: 2.2dvw;
   }
 
-
   /* ///////////////////BULLCASE/////////////////// */
 
   .bullcase {
     padding: 9dvw 3dvw;
-    border-top: .3dvw solid rgb(222, 227, 245);
+    border-top: 0.3dvw solid rgb(222, 227, 245);
     gap: 5dvw;
   }
 
@@ -2428,14 +2382,13 @@ img {
   }
 
   .bullcase .bull-head h1 {
-  font-size: 2.5dvw;
-}
+    font-size: 2.5dvw;
+  }
 
   .bullcase .bull-box {
     gap: 2dvw;
     border: 0.2dvw solid rgb(141, 241, 191);
     padding: 6dvw 4dvw;
-
   }
 
   .bullcase .bull-box .point {
@@ -2444,7 +2397,7 @@ img {
 
   .bullcase .bull-box .checkbox {
     font-size: 1.4dvw;
-    padding: .2dvw .4dvw;
+    padding: 0.2dvw 0.4dvw;
   }
 
   .bullcase .bull-box h1 {
@@ -2502,8 +2455,8 @@ img {
   }
 
   .head-heading {
-  font-size: .9dvw;
-}
+    font-size: 0.9dvw;
+  }
 
   .head-title {
     font-size: 3.5dvw;
@@ -2545,7 +2498,6 @@ img {
     color: rgb(94, 93, 93);
     padding: 2dvw;
     background-color: rgb(234, 240, 241);
-
   }
 
   /* //////////////////ONLINE BROKERAGE//////////// */
@@ -2565,12 +2517,10 @@ img {
     line-height: 3dvw;
   }
 
-
   .online-links a {
     width: 20dvw;
     font-size: 2dvw;
     padding: 0dvw;
-
   }
 
   .online-links .interactice-broker {
@@ -2602,7 +2552,7 @@ img {
   .footer-row .firstdiv .logo .written {
     display: flex;
     flex-direction: column;
-    gap: .2dvw;
+    gap: 0.2dvw;
   }
 
   .footer-row .firstdiv .logo .written h1 {
@@ -2613,14 +2563,13 @@ img {
 
   .footer-row .firstdiv .logo .written p {
     font-size: 1.6dvw;
-    letter-spacing: .1dvw;
+    letter-spacing: 0.1dvw;
   }
 
   .footer-row .firstdiv p {
     font-size: 1.6dvw;
     letter-spacing: 0.05dvw;
   }
-
 
   .footer-row .second {
     font-size: 1.7dvw;
@@ -2632,8 +2581,7 @@ img {
 
   .footer-row div h2 {
     font-size: 1.7dvw;
-    letter-spacing: .2dvw;
-
+    letter-spacing: 0.2dvw;
   }
 
   .footer .information {
@@ -2643,12 +2591,11 @@ img {
   }
 }
 
-@media(max-width:576px) {
-
+@media (max-width: 576px) {
   /* ////////////navbar//////////////////// */
-    .navbar {
+  .navbar {
     padding: 2.2dvw;
-    justify-content:center;
+    justify-content: center;
   }
 
   .navbar-logo img {
@@ -2656,7 +2603,7 @@ img {
   }
 
   .nav-logo-bar {
-    width: .36dvw;
+    width: 0.36dvw;
     height: 5dvw;
   }
 
@@ -2664,8 +2611,6 @@ img {
     font-size: 1.7dvw;
   }
 
-  
-  
   .nav-options a {
     display: none;
   }
@@ -2709,7 +2654,7 @@ img {
   }
 
   .top-right .right-head {
-    gap: 5dvw
+    gap: 5dvw;
   }
 
   .top-right .right-head h1 {
@@ -2743,7 +2688,6 @@ img {
     width: 100%;
     gap: 3dvw;
     padding: 3dvw;
-
   }
 
   .boxes .box div img {
@@ -2768,9 +2712,7 @@ img {
     color: #3b3b3b;
   }
 
-
   /* /////////////catalyst//////////////////// */
-
 
   .catalyst .catalyst-header {
     gap: 2dvw;
@@ -2784,7 +2726,6 @@ img {
     font-size: 5vw;
   }
 
-
   .catalyst .catalyst-header .description {
     font-size: 2.7dvw;
   }
@@ -2794,10 +2735,10 @@ img {
     width: 100%;
   }
 
-  .list .list-para .list-sidebar{
+  .list .list-para .list-sidebar {
     order: 1;
   }
-  .list .list-para .list-data{
+  .list .list-para .list-data {
     order: 2;
   }
   .list-data .data-date img {
@@ -2807,7 +2748,7 @@ img {
 
   .list-data .data-date p {
     font-size: 2dvw;
-    padding-top: .2dvw;
+    padding-top: 0.2dvw;
   }
 
   .data-title {
@@ -2819,10 +2760,10 @@ img {
     line-height: 4dvw;
     gap: 3dvw;
   }
-    .list .list-para2 {
+  .list .list-para2 {
     margin-right: 0dvw;
   }
-    .list-sidebar {
+  .list-sidebar {
     width: 2dvw;
   }
 
@@ -2833,34 +2774,33 @@ img {
   .list-sidebar3 {
     width: dvw;
   }
-    .sidebar-dot {
+  .sidebar-dot {
     width: 3dvw;
     height: 3dvw;
     top: 3dvw;
     left: -1.2dvw;
-    background-color:black;
+    background-color: black;
   }
-    .sidebar-dot h1 {
+  .sidebar-dot h1 {
     width: 2.3dvw;
     height: 2.3dvw;
   }
 
-    .catalyst .catalyst-delay {
+  .catalyst .catalyst-delay {
     font-size: 2dvw;
     padding: 2.2dvw;
   }
   /* //////////////BULLCASE//////////// */
-    .bullcase .bull-head p{
-      font-size: 2.5dvw;
-    }
-    .bullcase .bull-head h1 {
-  font-size: 4dvw;
-}
+  .bullcase .bull-head p {
+    font-size: 2.5dvw;
+  }
+  .bullcase .bull-head h1 {
+    font-size: 4dvw;
+  }
   .bullcase .bull-box {
     gap: 3dvw;
     border: 0.2dvw solid rgb(141, 241, 191);
     padding: 6dvw 4dvw;
-
   }
 
   .bullcase .bull-box .point {
@@ -2868,9 +2808,9 @@ img {
   }
   .bullcase .bull-box .checkbox {
     font-size: 2dvw;
-    padding: .2dvw .8dvw;
+    padding: 0.2dvw 0.8dvw;
   }
-    .bullcase .bull-box h1 {
+  .bullcase .bull-box h1 {
     font-size: 4dvw;
   }
 
@@ -2881,8 +2821,7 @@ img {
     gap: 2dvw;
   }
 
-
-    .bottom-line .bottom-info {
+  .bottom-line .bottom-info {
     font-size: 2.3dvw;
   }
 
@@ -2895,23 +2834,21 @@ img {
     line-height: 5dvw;
     gap: 8dvw;
   }
-    .bottom-line .bottom-desc .blurryspot {
+  .bottom-line .bottom-desc .blurryspot {
     font-size: 2.6dvw;
   }
-   .bottom-line .border {
+  .bottom-line .border {
     width: 25dvw;
   }
- .bottom-line .bottom-about {
+  .bottom-line .bottom-about {
     font-size: 2dvw;
   }
 
   /* /////////////////NMB///////// */
 
-
-    .nmb-head {
+  .nmb-head {
     gap: 2.6dvw;
   }
-
 
   .head-heading {
     font-size: 2.5dvw;
@@ -2926,15 +2863,16 @@ img {
     width: 100%;
     gap: 2dvw;
   }
-   .nmb-box .nmb-type {
-    font-size: 1.8dvw;}
+  .nmb-box .nmb-type {
+    font-size: 1.8dvw;
+  }
 
-      .nmb-box .nmb-type .nmb-info {
+  .nmb-box .nmb-type .nmb-info {
     font-size: 2dvw;
     width: 3dvw;
     height: 3dvw;
   }
-    .nmb-box .nmb-value {
+  .nmb-box .nmb-value {
     font-size: 4dvw;
   }
 
@@ -2944,54 +2882,52 @@ img {
 
   /* ////////////ONLINE BROKERAGE/////////// */
 
-
   .online-heading {
     font-size: 5dvw;
   }
-    .online-info {
+  .online-info {
     font-size: 2.6dvw;
-    line-height: 4dvw ;
+    line-height: 4dvw;
   }
-    .online-links a {
+  .online-links a {
     width: 46dvw;
     font-size: 3dvw;
     padding: 2dvw 0;
   }
 
-    .online-links .interactice-broker {
+  .online-links .interactice-broker {
     font-size: 3dvw;
   }
   .online-desc {
     font-size: 2dvw;
   }
   /* //////////////FOOTER//////// */
-  .footer-row{
-    gap:5dvw
+  .footer-row {
+    gap: 5dvw;
   }
 
-    .footer-row .firstdiv .logo .written h1 {
+  .footer-row .firstdiv .logo .written h1 {
     font-size: 4dvw;
   }
   .footer-row .firstdiv .logo .written p {
     font-size: 2dvw;
   }
-  
+
   .footer-row .firstdiv p {
-    font-size: 2.5dvw;}
+    font-size: 2.5dvw;
+  }
   .footer-row .second {
-    gap:2dvw  ;
+    gap: 2dvw;
   }
 
-      .footer-row .second {
+  .footer-row .second {
     font-size: 2.4dvw;
-}
-  .footer-row div h2{
-font-size: 2.4dvw;
   }
-    .footer .information {
+  .footer-row div h2 {
+    font-size: 2.4dvw;
+  }
+  .footer .information {
     font-size: 2.3dvw;
     line-height: 3dvw;
-
   }
-
 }
