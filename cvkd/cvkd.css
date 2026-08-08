@@ -1,66 +1,81 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "open sans", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", system-ui, sans-serif;
 }
+
 .navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.2dvw 1dvw;
-  border-bottom: 0.1dvw solid rgb(208, 206, 206);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2dvw 1dvw;
+    border-bottom: 0.1dvw solid rgb(208, 206, 206);
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 1000;
 }
+
 .navbar .logo-options {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2dvw;
 }
+
 .navbar .logo-options .logo h1 {
-  color: #32a46f;
-  font-size: 1.35dvw;
+    color: #32a46f;
+    font-size: 1.35dvw;
 }
+
 .navbar .logo-options .options {
-  display: flex;
-  flex-direction: row;
-  gap: 1.9dvw;
+    display: flex;
+    flex-direction: row;
+    gap: 1.9dvw;
 }
+
 .navbar .logo-options .options a {
-  text-decoration: none;
-  color: gray;
-  font-size: 0.95dvw;
-  font-weight: 700;
-  border-radius: 0.8dvw;
-  padding: 0.7dvw 1dvw;
-  transition: background 0.3s ease;
+    text-decoration: none;
+    color: gray;
+    font-size: 0.95dvw;
+    font-weight: 700;
+    border-radius: 0.8dvw;
+    padding: 0.7dvw 1dvw;
+    transition: background 0.3s ease;
 }
+
 .navbar .logo-options .options a:hover {
-  color: white;
-  background-color: #32a46f;
+    color: white;
+    background-color: #32a46f;
 }
+
 .navbar .login-signin {
-  display: flex;
-  flex-direction: row;
-  gap: 1dvw;
+    display: flex;
+    flex-direction: row;
+    gap: 1dvw;
 }
+
 .navbar .login-signin .login {
-  border: none;
-  outline: none;
-  background-color: #32a46f;
-  padding: 0.7dvw 1.2dvw;
-  border-radius: 0.8dvw;
-  color: white;
-  font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: #32a46f;
+    padding: 0.7dvw 1.2dvw;
+    border-radius: 0.8dvw;
+    color: white;
+    font-weight: 700;
 }
+
 .navbar .login-signin .create {
-  background-color: #32a46f;
-  border: 0.1dvw solid #1f985f;
-  padding: 0.7dvw 1dvw;
-  color: white;
-  font-weight: 700;
-  border-radius: 0.8dvw;
+    background-color: #32a46f;
+    border: 0.1dvw solid #1f985f;
+    padding: 0.7dvw 1dvw;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.8dvw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -141,47 +156,55 @@
 
 /* ///////////////////////////Main page/////////////////// */
 .stock-alert {
-  display: flex;
-  flex-direction: column;
-  padding: 7dvw 1dvw;
+    display: flex;
+    flex-direction: column;
+    padding: 7dvw 1dvw;
 }
+
 .stock-alert .date {
-  font-size: 1dvw;
-  font-weight: 500;
-  color: gray;
+    font-size: 1dvw;
+    font-weight: 500;
+    color: gray;
 }
+
 .stock-alert div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.4dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4dvw;
 }
+
 .stock-alert div h1 {
-  font-size: 3.35dvw;
+    font-size: 3.35dvw;
 }
+
 .stock-alert div h1 .nasdaq {
-  color: gray;
+    color: gray;
 }
+
 .stock-alert div h1 .nasdaq .cvkd {
-  color: #1f985f;
+    color: #1f985f;
 }
+
 .stock-alert .desc {
-  color: rgb(107, 107, 107);
-  font-size: 1.27dvw;
-  padding-right: 42dvw;
-  line-height: 2dvw;
+    color: rgb(107, 107, 107);
+    font-size: 1.27dvw;
+    padding-right: 42dvw;
+    line-height: 2dvw;
+
 }
+
 .stock-alert div button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 10dvw;
-  padding: 0.9dvw;
-  outline: none;
-  border: none;
-  gap: 1dvw;
-  color: rgb(59, 58, 58);
-  font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10dvw;
+    padding: 0.9dvw;
+    outline: none;
+    border: none;
+    gap: 1dvw;
+    color: rgb(59, 58, 58);
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     padding: 7dvw 1dvw;
@@ -232,141 +255,34 @@
     font-weight: 600;
 }
 
-/* ////////////////////////////LATEST NEWS////////////// */
+/* ////////////////////////bottom///////////// */
 .bottom {
-  padding: 0 1dvw;
-}
-.latest-news {
-  width: 23.1%;
-  border: 0.1dvw solid rgb(32, 32, 32);
-  padding: 1.5dvw;
-}
-.latest-news h1 {
-  font-size: 1.4dvw;
-}
-.latest-news div {
-  padding: 1dvw;
-}
-.latest-news div .one {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.latest-news div .one p {
-  font-size: 0.9dvw;
-  font-weight: 600;
-  background-color: rgb(235, 232, 232);
-  padding: 0.3dvw 0.5dvw;
-  color: rgb(38, 37, 37);
-  cursor: pointer;
-}
-.latest-news div .desc {
-  font-size: 1dvw;
-  font-weight: 500;
-  line-height: 1.7dvw;
-}
-.latest-news div .desc:hover {
-  color: #1f985f;
-  background-color: rgb(241, 240, 240);
-  cursor: pointer;
-}
-.latest-news div div {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5dvw;
-  font-size: 0.9dvw;
-  align-items: center;
-  color: gray;
-}
-.latest-news div div p {
-  font-size: 0.9dvw;
-}
-
-.stock-information {
-  width: 23.1%;
-  border: 0.1dvw solid rgb(32, 32, 32);
-}
-/* //////////////////////////// Brokerage Section ////////////////////////////// */
-.brokerage-sec {
-  margin-top: 2.917dvw;
-  text-align: center;
-}
-.brokerage-sec h2 {
-  font-size: 2.326dvw;
-  line-height: 2.8dvw;
-  color: #1f2f2e;
-  font-weight: 700;
-}
-.brokerage-links {
-  margin: 1dvw 16dvw;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25dvw;
-  justify-content: center;
-  align-items: center;
-}
-.brokerage-links a {
-  font-size: 0.8dvw;
-  line-height: 1.25dvw;
-  font-weight: 700;
-  text-decoration: none;
-}
-.brokerage-links a:nth-child(1) {
-  color: #22c55e;
-}
-.brokerage-links a:nth-child(2) {
-  color: #9333ea;
-}
-.brokerage-links a:nth-child(3) {
-  color: #ef4444;
-}
-.brokerage-links a:nth-child(4) {
-  color: #3b82f6;
-}
-.brokerage-links a:nth-child(5) {
-  color: #1f242e;
-}
-.brokerage-links a:nth-child(6) {
-  color: #15803d;
-}
-.brokerage-links a:nth-child(7) {
-  color: #dc2626;
-}
-.brokerage-links a:nth-child(8) {
-  color: #2563eb;
-}
-@media (max-width: 1024px) {
-    /* //////////////////////////// Brokerage Section ////////////////////////////// */
-  .brokerage-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .brokerage-sec h2 {
-    font-size: 2.96dvw;
-    line-height: 3.2dvw;
-  }
-  .brokerage-links {
-    margin: 2.2dvw auto;
-    gap: 2dvw;
-  }
-  .brokerage-links a {
-  font-size: 1.48dvw;
-  }
-}
-    /* padding: 0 1dvw;
+    padding: 0 1dvw;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 
-} */
+}
+
+/* ////////////////////////////LATEST NEWS////////////// */
 
 .latest-news {
     width: 23.1%;
-    border: .1dvw solid rgb(186, 184, 184);
-    padding: 1.5dvw;
+    border: .1dvw solid rgb(224, 222, 222);
     border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    padding: 1.5dvw;
+    position: sticky;
+    top: 5.35dvw;
+
 }
 
 .latest-news h1 {
     font-size: 1.4dvw;
+    color: rgb(40, 40, 40);
 }
 
 .latest-news div {
@@ -380,10 +296,10 @@
 }
 
 .latest-news div .one p {
-    font-size: .9dvw;
+    font-size: 0.9dvw;
     font-weight: 600;
     background-color: rgb(235, 232, 232);
-    padding: .3dvw .5dvw;
+    padding: 0.3dvw 0.5dvw;
     color: rgb(38, 37, 37);
     cursor: pointer;
 }
@@ -392,50 +308,528 @@
     font-size: 1dvw;
     font-weight: 500;
     line-height: 1.7dvw;
+    color: rgb(56, 54, 54);
 }
 
 .latest-news div .desc:hover {
     color: #1f985f;
     background-color: rgb(241, 240, 240);
     cursor: pointer;
+    font-weight: 500;
 }
 
 .latest-news div div {
     display: flex;
     flex-direction: row;
-    gap: .5dvw;
-    font-size: .9dvw;
+    gap: 0.5dvw;
+    font-size: 0.9dvw;
     align-items: center;
     color: gray;
 }
 
 .latest-news div div p {
-    font-size: .9dvw;
+    font-size: 0.9dvw;
 }
 
 
-/* ////////////////////////////STOCK INFORMATION//////////////////////// */
-.stock-information {
-    width: 23.1%;
-    border: .1dvw solid rgb(186, 184, 184);
-    padding: 1.5dvw;
+
+/* ///////////////SPONSORED////////////////// */
+.sponsored {
+    width: 49%;
+    border: .1dvw solid rgb(224, 222, 222);
     border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    padding: 1.5dvw;
+}
+
+.spons-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spons-nav .spons {
+    font-size: 0.9dvw;
+    font-weight: 600;
+    background-color: rgb(235, 232, 232);
+    padding: 0.3dvw 0.5dvw;
+    color: rgb(38, 37, 37);
+    cursor: pointer;
+}
+
+.spons-nav div {
+    display: flex;
+    flex-direction: row;
+    gap: 1dvw;
+    font-size: .97dvw;
+    color: rgb(104, 103, 103);
+}
+
+.spons-nav div p {
+    display: flex;
+    flex-direction: row;
+    gap: .5dvw;
+    align-items: center;
+}
+
+.sponsored .reader {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
 }
 
-.stock-information h1 {
-    font-size: 1.4dvw;
+.sponsored .reader h1 {
+    font-size: 1.9dvw;
+    color: rgb(40, 40, 40);
 }
 
-.stock-top {
-    display: block;
-    flex-direction: row;
+.sponsored .reader h4 {
+    color: rgb(40, 40, 40);
+}
+
+.sponsored .reader .spons-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.sponsored .reader .spons-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.sponsored .reader .source {
+    font-size: 1dvw;
+    font-weight: 500;
+    color: rgb(41, 40, 40);
+}
+
+.sponsored .reader .source p a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sponsored .reader .source p a:hover {
+    text-decoration: underline;
+}
+
+/* /////////////////////CADRENAL THERAPUTIC , INC/////// */
+.cadrenal-intro {
+    display: flex;
+    flex-direction: column;
     gap: 2dvw;
 }
 
-.stock-top p {
+.cadrenal-intro h1 {
+    font-size: 1.5dvw;
+    color: #15803d;
+}
+
+.cadrenal-intro .cadrenal-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.cadrenal-intro .cadrenal-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.cadrenal-intro h4 {
+    font-size: 1dvw;
+    color: rgb(41, 40, 40);
+}
+
+.cadrenal-intro ul {
+    display: flex;
+    flex-direction: column;
+    gap: .7dvw;
+    font-size: 1dvw;
+    font-weight: 500;
+    padding-left: 1.3dvw;
+}
+
+.cadrenal-intro ul .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+
+}
+
+/* /////////////////////BREAKDOWN////////////////// */
+.breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.breakdown h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+
+}
+
+.breakdown-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.breakdown-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.breakdown .vid {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    text-align: center;
+}
+
+.breakdown .vid h2 {
+    font-weight: 500;
+    font-size: 1.2dvw;
+}
+
+/* ////////////////TECARFARIN GAME CHANGER/////////// */
+.changer {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.changer h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+
+}
+
+.changer .changer-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.changer .changer-desc .bold-text {
+    color: rgb(41, 40, 40);
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.changer .key-title {
+    color: rgb(41, 40, 40);
+    font-weight: 700;
+    font-size: 1.1dvw;
+
+}
+
+.changer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    color: rgb(41, 40, 40);
+    padding-left: 1.2dvw;
+    font-size: 1dvw;
+    font-weight: 500;
+}
+
+.changer ul .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+
+}
+
+/* ////////////EXPANSION///////////////// */
+.expansion {
+    padding: 1dvw;
+    border: .1dvw solid rgb(224, 222, 222);
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    border-radius: 1dvw;
+
+}
+
+.expansion h1 {
+    color: #15803d;
+    font-size: 1.5dvw;
+}
+
+.expansion .expansion-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.expansion .expansion-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+/* ///////////////CLINICAL DATA////////// */
+.clinical {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.clinical h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+}
+
+.clinical-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.clinical-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.clinical .graph {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.clinical .graph p {
+    font-size: 1dvw;
+    color: rgb(41, 40, 40);
+
+}
+
+/* ////////////////////CATALYST///////////// */
+.catalyst {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+}
+
+.catalyst h1 {
+    color: rgb(41, 40, 40);
+    font-size: 1.4dvw;
+}
+
+.catalyst div{
+    display: flex;
+    flex-direction:column ;
+    gap: .3dvw;
+}
+.catalyst .desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+.catalyst .desc .bold-text{
+    font-weight: 700;
+    color: rgb(41, 40, 40);
+}
+.catalyst div ul{
+    font-size: 1dvw;
+    padding-left: 1.4dvw;
+    font-weight: 500;
+}
+.catalyst div ul .bold-text{
+    font-weight: 700;
+    color: rgb(41, 40, 40);
+
+}
+.catalyst .phrase{
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////STOCK INFORMATION////////////// */
+
+
+.stock-information {
+    width: 23.1%;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    position: sticky;
+    top: 5.35dvw;
+}
+
+.stock-information .stock-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2dvw;
+    border-bottom: .1dvw solid rgb(226, 224, 224);
+    padding: 1.5dvw;
+}
+
+.stock-information .stock-top h1 {
+    font-size: 1.4dvw;
+    color: rgb(40, 40, 40);
+}
+
+.stock-information .stock-top div {
+    display: flex;
+    flex-direction: column;
+    gap: .2dvw;
+}
+
+.stock-information .stock-top div p {
     font-size: .95dvw;
     color: gray;
 }
+
+
+.stock-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    border-bottom: .1dvw solid rgb(226, 224, 224);
+    padding: 2dvw 0;
+
+}
+
+.stock-bottom div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5dvw;
+}
+
+.stock-bottom div p {
+    font-size: .95dvw;
+    color: gray;
+}
+
+.stock-bottom div h4 .usd {
+    color: gray;
+    font-weight: 400;
+}
+
+.stock-bottom .percentage {
+    text-align: center;
+    font-size: .85dvw;
+    color: #15803d;
+    border: .1dvw solid #15803d;
+    width: 4dvw;
+    padding: .1dvw 0;
+    border-radius: .8dvw;
+    margin-left: auto;
+    margin-right: 1dvw;
+}
+
+
+/* //////////////////////////// Brokerage Section ////////////////////////////// */
+.brokerage-sec {
+    margin-top: 2.917dvw;
+    text-align: center;
+}
+
+.brokerage-sec h2 {
+    font-size: 2.326dvw;
+    line-height: 2.8dvw;
+    color: #1f2f2e;
+    font-weight: 700;
+}
+
+.brokerage-links {
+    margin: 1dvw 16dvw;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25dvw;
+    justify-content: center;
+    align-items: center;
+}
+
+.brokerage-links a {
+    font-size: 0.8dvw;
+    line-height: 1.25dvw;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brokerage-links a:nth-child(1) {
+    color: #22c55e;
+}
+
+.brokerage-links a:nth-child(2) {
+    color: #9333ea;
+}
+
+.brokerage-links a:nth-child(3) {
+    color: #ef4444;
+}
+
+.brokerage-links a:nth-child(4) {
+    color: #3b82f6;
+}
+
+.brokerage-links a:nth-child(5) {
+    color: #1f242e;
+}
+
+.brokerage-links a:nth-child(6) {
+    color: #15803d;
+}
+
+.brokerage-links a:nth-child(7) {
+    color: #dc2626;
+}
+
+.brokerage-links a:nth-child(8) {
+    color: #2563eb;
+}
+
+@media (max-width: 1024px) {
+
+    /* //////////////////////////// Brokerage Section ////////////////////////////// */
+    .brokerage-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .brokerage-sec h2 {
+        font-size: 2.96dvw;
+        line-height: 3.2dvw;
+    }
+
+    .brokerage-links {
+        margin: 2.2dvw auto;
+        gap: 2dvw;
+    }
+
+    .brokerage-links a {
+        font-size: 1.48dvw;
+    }
+}
+
+/* padding: 0 1dvw;
+    display: flex;
+    flex-direction: row;
+
+} */

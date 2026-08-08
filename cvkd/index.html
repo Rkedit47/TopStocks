@@ -1,161 +1,441 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./cvkd.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- //////////////////NAVBAR//////////////////// -->
-    <div class="navbar">
-      <div class="logo-options">
-        <div class="logo">
-          <h1>StockVerse</h1>
-        </div>
-        <div class="options">
-          <a href="">Stock Picks</a>
-          <a href="">News</a>
-          <a href="">StockVerse GPT</a>
-          <a href="">Pricing</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./cvkd.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- //////////////////NAVBAR//////////////////// -->
+  <div class="navbar">
+    <div class="logo-options">
+      <div class="logo">
+        <h1>StockVerse</h1>
       </div>
-      <div class="login-signin">
-        <button class="login">Login</button>
-        <button class="create">Create Account</button>
+      <div class="options">
+        <a href="">Stock Picks</a>
+        <a href="">News</a>
+        <a href="">StockVerse GPT</a>
+        <a href="">Pricing</a>
       </div>
     </div>
-    <!-- ////////////////////MAIN PAGE///////////////////// -->
-    <div class="stock-alert">
-      <p class="date">August 6, 2026</p>
+    <div class="login-signin">
+      <button class="login">Login</button>
+      <button class="create">Create Account</button>
+    </div>
+  </div>
+  <!-- ////////////////////MAIN PAGE///////////////////// -->
+  <div class="stock-alert">
+    <p class="date">August 6, 2026</p>
+    <div>
+      <h1>
+        Stockverse Alert:
+        <span class="nasdaq">(Nasdaq: <span class="cvkd">CVKD</span>) </span>
+      </h1>
+      <p class="desc">
+        Add CVKD to your radar. This Nasdaq biotech has multiple catalysts
+        converging in a high demand cardiovascular space, and it is still
+        flying under the radar. Read full breakdown below.
+      </p>
+      <button>
+        <i class="fa-solid fa-share"> </i>
+        <p>Share Alert</p>
+      </button>
+    </div>
+  </div>
+  <!-- //////////////////////////LATEST NEWS/////////////// -->
+  <div class="bottom">
+    <div class="latest-news">
+      <h1>Latest News</h1>
       <div>
-        <h1>
-          Stockverse Alert:
-          <span class="nasdaq">(Nasdaq: <span class="cvkd">CVKD</span>) </span>
-        </h1>
+        <div class="one">
+          <p class="press-release">Press Release</p>
+          <i class="fa-solid fa-share"></i>
+        </div>
         <p class="desc">
-          Add CVKD to your radar. This Nasdaq biotech has multiple catalysts
-          converging in a high demand cardiovascular space, and it is still
-          flying under the radar. Read full breakdown below.
+          Cadrenal Therapeutics Announces End-of-Phase 2 Meeting with the FDA
+          and Pivotal Phase 3 Registration Path for CAD-1005 in
+          Heparin-Induced Thrombocytopenia (HIT)
         </p>
-        <button>
-          <i class="fa-solid fa-share"> </i>
-          <p>Share Alert</p>
-        </button>
-      </div>
-    </div>
-    <!-- //////////////////////////LATEST NEWS/////////////// -->
-    <div class="bottom">
-      <div class="latest-news">
-        <h1>Latest News</h1>
         <div>
-          <div class="one">
-            <p class="press-release">Press Release</p>
-            <i class="fa-solid fa-share"></i>
-          </div>
-          <p class="desc">
-            Cadrenal Therapeutics Announces End-of-Phase 2 Meeting with the FDA
-            and Pivotal Phase 3 Registration Path for CAD-1005 in
-            Heparin-Induced Thrombocytopenia (HIT)
-          </p>
-          <div>
-            <i class="fa-solid fa-clock"></i>
-            <p class="press-release">3 months ago</p>
-          </div>
-        </div>
-        <div>
-          <div class="one">
-            <p class="press-release">Press Release</p>
-            <i class="fa-solid fa-share"></i>
-          </div>
-          <p class="desc">
-            Cadrenal Therapeutics Announces Phase 2 Results with Encouraging
-            Reductions in Thrombotic Events for CAD-1005
-          </p>
-          <div>
-            <i class="fa-solid fa-clock"></i>
-            <p class="press-release">5 months ago</p>
-          </div>
-        </div>
-        <div>
-          <div class="one">
-            <p>Analyst</p>
-            <i class="fa-solid fa-share"></i>
-          </div>
-          <p class="desc">
-            Cadrenal's Quiet Expansion Play Is Starting to Get Loud
-          </p>
-          <div>
-            <i class="fa-solid fa-clock"></i>
-            <p>7 months ago</p>
-          </div>
-        </div>
-        <div>
-          <div class="one">
-            <p>Analyst</p>
-            <i class="fa-solid fa-share"></i>
-          </div>
-          <p class="desc">
-            Cadrenal's Anticoagulation Platform Is Expanding in a $40 Billion
-            Market
-          </p>
-          <div>
-            <i class="fa-solid fa-clock"></i>
-            <p>7 months ago</p>
-          </div>
+          <i class="fa-solid fa-clock"></i>
+          <p class="press-release">3 months ago</p>
         </div>
       </div>
-
-      <div class="sponsored"></div>
-      <div class="stock-information"></div>
-        <div class="stock-information">
-            <h1>Stock Information</h1>
-            <div class="stock-top">
-                <p>Company</p>
-                <h1>Caderal Therapeutics, Inc.</h1>
-                <p>CVKD . Nasdaq</p>
-            </div>
-
-            <div class="stock-bottom">
-                <div>
-                    <p>Current Price</p>
-                    <h1>$1.93 <span>USD</span></h1>
-                </div>
-                <div>
-                    <p>Market Cap</p>
-                    <h1>6.1M</h1>
-                </div>
-
-            </div>
-            <p class="percentage">-1.63%</p>
+      <div>
+        <div class="one">
+          <p class="press-release">Press Release</p>
+          <i class="fa-solid fa-share"></i>
         </div>
-    </div>
-
-    <div class="brokerage-sec">
-      <h2>
-        Check Your Online Brokerage For The<br />Latest News on CVKD
-      </h2>
-      <div class="brokerage-links">
-        <a href="https://robinhood.com/stocks/CVKD" target="_blank" rel="noopener noreferrer">Robinhood</a>
-        <a href="https://www.etrade.wallst.com/etrade-web/snapshot?ChallengeUrl=https://idp.etrade.com/idp/SSO.saml2&amp;reinitiate-handshake=0&amp;prospectnavyear=2011&amp;AuthnContext=prospect&amp;env=PRD&amp;symbol=cvkd&amp;rsO=new&amp;country=US" target="_blank" rel="noopener noreferrer">E*TRADE</a>
-        <a href="https://www.tastytrade.com" target="_blank" rel="noopener noreferrer">tastytrade</a>
-        <a href="https://www.webull.com/quote/nasdaq-cvkd" target="_blank" rel="noopener noreferrer">Webull</a>
-        <a href="https://www.sofi.com/invest/" target="_blank" rel="noopener noreferrer">SoFi</a>
-        <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=cvkd" target="_blank" rel="noopener noreferrer">Fidelity</a>
-        <a href="https://www.interactivebrokers.com" target="_blank" rel="noopener noreferrer">Interactive Brokers</a>
-        <a href="https://www.schwab.com/research/stocks/quotes/summary/cvkd" target="_blank" rel="noopener noreferrer">Charles Schwab</a>
+        <p class="desc">
+          Cadrenal Therapeutics Announces Phase 2 Results with Encouraging
+          Reductions in Thrombotic Events for CAD-1005
+        </p>
+        <div>
+          <i class="fa-solid fa-clock"></i>
+          <p class="press-release">5 months ago</p>
+        </div>
+      </div>
+      <div>
+        <div class="one">
+          <p>Analyst</p>
+          <i class="fa-solid fa-share"></i>
+        </div>
+        <p class="desc">
+          Cadrenal's Quiet Expansion Play Is Starting to Get Loud
+        </p>
+        <div>
+          <i class="fa-solid fa-clock"></i>
+          <p>7 months ago</p>
+        </div>
+      </div>
+      <div>
+        <div class="one">
+          <p>Analyst</p>
+          <i class="fa-solid fa-share"></i>
+        </div>
+        <p class="desc">
+          Cadrenal's Anticoagulation Platform Is Expanding in a $40 Billion
+          Market
+        </p>
+        <div>
+          <i class="fa-solid fa-clock"></i>
+          <p>7 months ago</p>
+        </div>
       </div>
     </div>
-  </body>
+    <!-- /////////////////////SPONSORED////////////// -->
+
+    <div class="sponsored">
+      <div class="spons-nav">
+        <p class="spons">*Sponsored</p>
+        <div>
+          <p><i class="fa-regular fa-calendar"></i> August 8, 2026</p>
+          <p><i class="fa-solid fa-clock"></i> 15 min read</p>
+        </div>
+      </div>
+      <div class="reader">
+        <h1>Stockverse: Cadrenal Therapeutics Inc. (NASDAQ: CVKD)</h1>
+        <h4>Hello Readers,</h4>
+        <div class="spons-desc">
+          <p> <span class="bold-text">9 catalysts</span> are stacking up on a Nasdaq biotech (CVKD) that most traders
+            haven't discovered yet, and the setup is getting harder to ignore.</p>
+          <p>The company holds <span class="bold-text">breakthrough Factor XIa inhibitors</span> , the same drug class
+            that multiple Big Pharma
+            companies are racing to dominate, plus a <span class="bold-text"> Phase 3-ready</span> cardiovascular drug
+            targeting populations with <span class="bold-text">zero
+              treatment alternatives</span> .</p>
+          <p>In December 2025, the company announced a major pipeline expansion with the acquisition of <span
+              class="bold-text">CAD-1005 </span>(formerly
+            VLX-1005), a first-in-class Phase 2 drug for <span class="bold-text">Heparin-Induced Thrombocytopenia</span>
+            that already has <span class="bold-text">Orphan Drug</span>
+            and <span class="bold-text">Fast Track</span> designations from the FDA. Phase 2 results showed a <span
+              class="bold-text">greater
+              than 25% absolute reduction in thrombotic events</span> versus placebo, and the company has now <span
+              class="bold-text">successfully completed its End-of-Phase 2 meeting
+              with the FDA</span>, receiving guidance on a <span class="bold-text">pivotal Phase 3 registration
+              trial</span>.
+          </p>
+          <p>Zacks Small Cap Research published a new report valuing CVKD at <span class="bold-text">$25 per</span>
+            share after incorporating CAD-1005
+            into its model — more than <span class="bold-text">300% upside</span> from recent levels.</p>
+        </div>
+        <div class="source">
+          <p>Source: <a
+              href="https://scr.zacks.com/news/news-details/2026/CVKD-Acquires-12-LOX-Inhibitor-for-the-Treatment-of-Heparin-Induced-Thrombocytopenia-HIT-article/default.aspx">Zacks
+              Small Cap Research Report</a></p>
+        </div>
+        <div class="spons-desc">
+          <p>Now add a <span class="bold-text">low float of fewer than two million shares</span>, and you'll see exactly
+            why this profile has climbed
+            to the top of my watchlist.</p>
+          <p>If you're looking for an under-the-radar biotech with meaningful catalysts lining up, this one demands
+            immediate attention:
+
+          </p>
+        </div>
+      </div>
+      <div class="cadrenal-intro">
+        <h1>Cadrenal Therapeutics, Inc. (Nasdaq: CVKD)</h1>
+        <p class="cadrenal-desc">Cadrenal Therapeutics is a biopharmaceutical company developing therapeutics to address
+          <span class="bold-text">serious gaps in
+            anticoagulation therapy</span>. The company's lead asset, <span class="bold-text">tecarfarin</span>, is an
+          investigational
+          oral vitamin K antagonist designed for patients who face higher risks when using warfarin, including those
+          with <span class="bold-text">implanted cardiac
+            devices</span> or <span class="bold-text">severe kidney conditions</span>.
+        </p>
+        <p class="cadrenal-desc">Tecarfarin is engineered to provide <span class="bold-text">more predictable
+            anticoagulation</span> and reduce risks associated
+          with <span class="bold-text">stroke,
+            heart attack, clot formation, and treatment volatility</span>. Its unique metabolic design allows it to
+          bypass many of the complications that limit the effectiveness of traditional warfarin.</p>
+        <p class="cadrenal-desc">And based on multiple catalysts now taking shape, CVKD has secured a top position on my
+          watchlist.
+
+        </p>
+        <h4>Here are the key catalysts coming into focus:</h4>
+
+
+        <ul>
+          <li><span class="bold-text">FDA End-of-Phase 2 meeting completed</span> with guidance on a pivotal Phase 3
+            registration trial
+            for CAD-1005 in
+            HIT</li>
+          <li><span class="bold-text">Phase 2 results</span> showing greater than 25% reduction in thrombotic events
+          </li>
+          <li>A <span class="bold-text">Zacks $25 valuation</span> representing <span class="bold-text">over 300%
+              upside</span>
+          </li>
+          <li>A <span class="bold-text">first-in-class HIT</span> drug acquisition with <span class="bold-text">Orphan
+              Drug</span> and <span class="bold-text">Fast
+              Track</span> FDA designations
+          </li>
+          <li>A <span class="bold-text">low float</span> that creates an environment of elevated volatility potential
+          </li>
+          <li>A pipeline expanding acquisition that adds major <span class="bold-text">Factor XIa inhibitors</span>
+          </li>
+          <li>Clinical trial initiation plans for a <span class="bold-text">high risk ESKD population</span>
+          </li>
+          <li>A new <span class="bold-text">high profile board appointment</span> strengthening clinical leadership
+          </li>
+          <li><span class="bold-text">Frunexian</span> as the only IV small-molecule FXIa inhibitor designed for acute
+            hospital use
+          </li>
+        </ul>
+      </div>
+      <!-- ///////////////////////BREAKDOWN//////////////// -->
+      <div class="breakdown">
+        <h1>Company Breakdown: Cadrenal Therapeutics, Inc. (Nasdaq: CVKD)</h1>
+
+        <p class="breakdown-desc">Cadrenal is a <span class="bold-text">late stage</span> cardiovascular drug developer
+          focused on advancing tecarfarin, a novel vitamin K
+          antagonist designed as a <span class="bold-text">safer and more stable alternative to warfarin</span>. The
+          company is specifically targeting
+          patient populations that currently have <span class="bold-text">no reliable anticoagulation</span> options
+          beyond warfarin, despite
+          significant risks.</p>
+        <p class="breakdown-desc">Warfarin remains difficult to manage because of drug interactions, genetic
+          variability, kidney involvement,
+          and frequent dose adjustments. Many patients remain outside the therapeutic range, which increases the
+          likelihood <span class="bold-text">of heart attack, stroke, bleeding, and death</span>.</p>
+        <div class="vid">
+          <h2>Company Overview Video</h2>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/vWptBokLdj0?rel=0"
+            title="Company Overview Video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <!-- /////////////Tecarfarin Game Changer///////////// -->
+      <div class="changer">
+        <h1>Why Tecarfarin Could Be a Game Changer</h1>
+        <p class="changer-desc">Tecarfarin has a <span class="bold-text">Phase 3 ready</span> profile supported by
+          extensive clinical data. Studies
+          show potential
+          improvements in anticoagulation stability, including <span class="bold-text">increased time in therapeutic
+            range</span>. This is a critical
+          measure because stability is strongly correlated with <span class="bold-text">reduced adverse events</span>.
+        </p>
+
+        <span class="key-title">Key distinctions include:</span>
+        <ul class="key">
+          <li><span class="bold-text">Orphan drug designation</span> for LVAD patients</li>
+          <li><span class="bold-text">Orphan drug designation</span> and <span class="bold-text">fast track
+              status</span> for ESKD patients with AFib</li>
+          <li>A metabolic pathway primarily outside the <span class="bold-text">CYP450</span> system, reducing drug
+            interaction risks</li>
+          <li><span class="bold-text">Reduced susceptibility</span> to drug interactions and kidney impairment</li>
+        </ul>
+
+        <p class="changer-desc">Tecarfarin is also being developed for patients with <span class="bold-text">mechanical
+            heart
+            valves</span> who struggle with
+          warfarin due
+          to genetic resistance, kidney dysfunction, or polypharmacy issues.</p>
+        <p class="changer-desc">Because tecarfarin is the only <span class="bold-text">next generation VKA</span> being
+          developed for
+          these specific populations, Cadrenal
+          is aiming to <span class="bold-text">redefine standards of care</span> in areas where therapeutic options have
+          not progressed
+          for decades.
+        </p>
+        <!-- ////////////expansion//////////////// -->
+
+        <div class="expansion">
+          <h1>Pipeline Expansion: Factor XIa and Frunexian</h1>
+          <div class="expansion-desc">
+            <p>Cadrenal's acquisition of assets from eXIthera added significant depth to its anticoagulation pipeline.
+              These assets include <span class="bold-text">frunexian</span>, a <span class="bold-text">first in class IV
+                Factor XIa inhibitor</span>, and <span class="bold-text">EP 7327</span>, an oral Factor XIa
+              inhibitor in development for major thrombotic indications.</p>
+            <p>Factor XIa has emerged as one of the <span class="bold-text">most validated targets</span> in
+              cardiovascular drug development. It plays
+              a limited role in normal clotting but a <span class="bold-text">major role</span> in pathological
+              thrombosis. This makes FXIa inhibition
+              a promising strategy for reducing clot formation while maintaining <span class="bold-text">lower bleeding
+                risk</span>.</p>
+            <p>Large pharmaceutical companies have invested billions into this space, underscoring its long term
+              commercial and scientific potential. </p>
+          </div>
+        </div>
+        <!-- ////////////CLINICAL DATA//////////////// -->
+        <div class="clinical">
+          <h1>Frunexian Clinical Data</h1>
+          <div class="clinical-desc">
+            <P>Frunexian is currently the <span class="bold-text">only intravenous small molecule Factor XIa
+                inhibitor</span> in active development for
+              acute use cases. Two Phase 1 clinical studies produced strong results with frunexian <span
+                class="bold-text">well tolerated</span> at all
+              tested levels. aPTT increased in a <span class="bold-text">dose proportional</span> manner, PT remained
+              unchanged confirming <span class="bold-text">target
+                specificity</span>, and Factor XIa activity decreased <span class="bold-text">consistently with
+                dose</span>.</P>
+
+            <P>The clinical data shows frunexian works exactly as designed. Higher doses create stronger anticoagulation
+              effects that can be <span class="bold-text">turned on and off rapidly</span>. Most importantly, Phase 1
+              trials in humans showed <span class="bold-text">no
+                serious adverse events at any dose level tested</span>, which has been the biggest challenge in
+              anticoagulation
+              drug development.</P>
+
+            <P>This gives Cadrenal a drug that hospitals can use during <span class="bold-text">critical
+                procedures</span> like heart surgeries and
+              catheter placements where <span class="bold-text">precise, fast-acting blood thinning control is
+                essential</span>. Big Pharma has spent
+              billions trying to develop drugs with this profile. Cadrenal acquired one that has already demonstrated
+              <span class="bold-text">favorable safety and activity</span> in human trials and shown the exact
+              pharmacological characteristics that
+              make it commercially valuable.
+            </P>
+
+            <P>The latest Zacks research report highlighted the competitive landscape for Factor XIa inhibitors,
+              confirming that multiple major pharmaceutical companies all have active programs in this space. Frunexian
+              stands apart as the <span class="bold-text">only IV small-molecule FXIa inhibitor designed for rapid
+                on/off acute hospital use</span>,
+              occupying a differentiated niche that the larger players are not targeting.</P>
+          </div>
+          <div class="graph">
+            <img src="../assests/inhibitor-graph.png" alt="">
+            <p>Factor XIa Inhibitor Competitive Landscape — Frunexian is the only IV small-molecule FXIa inhibitor in
+              development for acute care settings.</p>
+            <p>Source: Cadrenal Therapeutics, Inc.</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- //////////Potential catalyst 1///////////////// -->
+      <div class="catalyst">
+        <h1>CVKD Potential Catalyst #1: FDA End-of-Phase 2 Meeting Completed — Pivotal Phase 3 Registration Path Defined
+          for CAD-1005 in HIT</h1>
+        <div>
+          <p class="desc">On <span class="bold-text">April 30, 2026</span>, Cadrenal Therapeutics announced that it
+            hassp
+            successfully completed its End-of-Phase 2 meeting with the FDA and received guidance on key elements of the
+            <span class="bold-text">Phase 3 pivotal trial</span> for CAD-1005 in heparin-induced thrombocytopenia (HIT).
+          </p>
+          <p class="desc">The FDA provided <span class="bold-text">critical guidance</span> on protocol design, study
+            population,
+            dosing, background therapy,
+            exposure, the safety database, and the <span class="bold-text">primary endpoint of new or worsening
+              thrombotic events</span>.</p>
+          <p class="desc">Based on FDA feedback, Cadrenal plans to advance directly to a <span
+              class="bold-text">randomized, blinded,
+              placebo-controlled
+              Phase 3 study</span> evaluating CAD-1005 added to the current standard of care for patients with HIT. This
+            will be
+            the <span class="bold-text">first randomized, blinded, placebo-controlled registration trial in HIT</span>.
+          </p>
+
+          <span class="bold-text">Planned Phase 3 HIT Trial Design:</span>
+
+          <ul>
+            <li>Approximately 120 patients across up to <span class="bold-text">50 clinical centers worldwide</span>
+            </li>
+            <li>Patients with suspected HIT randomized to <span class="bold-text">CAD-1005 or placebo</span> on top of
+              standard-of-care anticoagulation
+            </li>
+            <li>Treatment for <span class="bold-text">up to 14 days</span> days during hospitalization</li>
+            <li>Primary endpoint: incidence of <span class="bold-text">new or worsening thrombotic events</span> in
+              SRA-confirmed HIT patients,
+              centrally adjudicated</li>
+            <li>At least <span class="bold-text">one planned interim analysis</span></li>
+            <li>Projected <span class="bold-text">NDA submission in 2029</span> adding Factor XIa assets</li>
+          </ul>
+          <p class="phrase">“Building on our Phase 2 experience with CAD-1005 in HIT and now with FDA guidance for Phase
+            3, Cadrenal is positioned to pursue a pivotal trial for the first new therapy for HIT in more than two
+            decades,” said Quang X. Pham, Chairman and CEO of Cadrenal Therapeutics.
+
+            “Interrupting the vicious cycle of platelet activation in HIT with CAD-1005 could be an important addition
+            to our therapeutic armamentarium for this devastating condition,” said James Ferguson, M.D., Chief Medical
+            Officer of Cadrenal Therapeutics.</p>
+
+          <p class="desc"><span class="bold-text">What This Means For Investors:</span> This is a <span
+              class="bold-text">major regulatory milestone</span>. The FDA has now provided direct
+            guidance on the Phase 3 trial design, confirming that the <span class="bold-text">thrombotic events
+              endpoint</span> from the Phase 2 study
+            is the path forward for registration. Cadrenal has a clear roadmap to a pivotal trial, a projected <span
+              class="bold-text">NDA
+              submission in 2029</span>, and the regulatory designations (Orphan Drug, Fast Track) to accelerate that
+            timeline.
+            CAD-1005 remains the <span class="bold-text">only 12-LOX inhibitor in clinical development worldwide</span>
+            and the only <span class="bold-text">treatment
+              targeting the underlying immune drivers of HIT</span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="stock-information">
+      <div class="stock-top">
+        <h1>Stock Information</h1>
+        <div>
+          <p>Company</p>
+          <h1>Caderal Therapeutics, Inc.</h1>
+          <p>CVKD . Nasdaq</p>
+        </div>
+      </div>
+
+      <div class="stock-bottom">
+        <div>
+          <p>Current Price</p>
+          <h4>$1.93 <span class="usd">USD</span></h4>
+        </div>
+        <div>
+          <p>Market Cap</p>
+          <h4>6.1M</h4>
+        </div>
+        <p class="percentage">-1.63%</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="brokerage-sec">
+    <h2>
+      Check Your Online Brokerage For The<br />Latest News on CVKD
+    </h2>
+    <div class="brokerage-links">
+      <a href="https://robinhood.com/stocks/CVKD" target="_blank" rel="noopener noreferrer">Robinhood</a>
+      <a href="https://www.etrade.wallst.com/etrade-web/snapshot?ChallengeUrl=https://idp.etrade.com/idp/SSO.saml2&amp;reinitiate-handshake=0&amp;prospectnavyear=2011&amp;AuthnContext=prospect&amp;env=PRD&amp;symbol=cvkd&amp;rsO=new&amp;country=US"
+        target="_blank" rel="noopener noreferrer">E*TRADE</a>
+      <a href="https://www.tastytrade.com" target="_blank" rel="noopener noreferrer">tastytrade</a>
+      <a href="https://www.webull.com/quote/nasdaq-cvkd" target="_blank" rel="noopener noreferrer">Webull</a>
+      <a href="https://www.sofi.com/invest/" target="_blank" rel="noopener noreferrer">SoFi</a>
+      <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=cvkd" target="_blank"
+        rel="noopener noreferrer">Fidelity</a>
+      <a href="https://www.interactivebrokers.com" target="_blank" rel="noopener noreferrer">Interactive Brokers</a>
+      <a href="https://www.schwab.com/research/stocks/quotes/summary/cvkd" target="_blank"
+        rel="noopener noreferrer">Charles Schwab</a>
+    </div>
+  </div>
+</body>
+
 </html>
