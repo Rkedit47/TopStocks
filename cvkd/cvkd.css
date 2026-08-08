@@ -5,82 +5,7 @@
     font-family: "open sans", system-ui, sans-serif;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.2dvw 1dvw;
-    border-bottom: 0.1dvw solid rgb(208, 206, 206);
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    z-index: 1000;
-}
 
-.navbar .logo-options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2dvw;
-}
-
-.navbar .logo-options .logo h1 {
-    color: #32a46f;
-    font-size: 1.35dvw;
-}
-
-.navbar .logo-options .options {
-    display: flex;
-    flex-direction: row;
-    gap: 1.9dvw;
-}
-
-.navbar .logo-options .options a {
-    text-decoration: none;
-    color: gray;
-    font-size: 0.95dvw;
-    font-weight: 700;
-    border-radius: 0.8dvw;
-    padding: 0.7dvw 1dvw;
-    transition: background 0.3s ease;
-}
-
-.navbar .logo-options .options a:hover {
-    color: white;
-    background-color: #32a46f;
-}
-
-.navbar .login-signin {
-    display: flex;
-    flex-direction: row;
-    gap: 1dvw;
-}
-
-.navbar .login-signin .login {
-    border: none;
-    outline: none;
-    background-color: #32a46f;
-    padding: 0.7dvw 1.2dvw;
-    border-radius: 0.8dvw;
-    color: white;
-    font-weight: 700;
-}
-
-.navbar .login-signin .create {
-    background-color: #32a46f;
-    border: 0.1dvw solid #1f985f;
-    padding: 0.7dvw 1dvw;
-    color: white;
-    font-weight: 700;
-    border-radius: 0.8dvw;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "open sans", system-ui, sans-serif;
-}
 
 .navbar {
     display: flex;
@@ -102,6 +27,7 @@
 .navbar .logo-options .logo h1 {
     color: #32a46f;
     font-size: 1.35dvw;
+    cursor: pointer;
 }
 
 .navbar .logo-options .options {
@@ -112,7 +38,7 @@
 
 .navbar .logo-options .options a {
     text-decoration: none;
-    color: gray;
+    color: rgb(150, 150, 150);
     font-size: .95dvw;
     font-weight: 700;
     border-radius: .8dvw;
@@ -131,17 +57,22 @@
     display: flex;
     flex-direction: row;
     gap: 1dvw;
+
 }
 
 .navbar .login-signin .login {
     border: none;
     outline: none;
-    background-color: #32a46f;
     padding: .7dvw 1.2dvw;
     border-radius: .8dvw;
-    color: white;
     font-weight: 700;
-
+    color: rgb(150, 150, 150);
+    background-color: white;
+    cursor: pointer;
+}
+.navbar .login-signin .login:hover{
+    background-color: #32a46f;
+    color: white;
 
 }
 
@@ -152,6 +83,7 @@
     color: white;
     font-weight: 700;
     border-radius: .8dvw;
+    cursor: pointer;
 }
 
 /* ///////////////////////////Main page/////////////////// */
@@ -159,6 +91,8 @@
     display: flex;
     flex-direction: column;
     padding: 7dvw 1dvw;
+    background-color: #f7f8fc;
+    
 }
 
 .stock-alert .date {
@@ -190,7 +124,6 @@
     font-size: 1.27dvw;
     padding-right: 42dvw;
     line-height: 2dvw;
-
 }
 
 .stock-alert div button {
@@ -262,7 +195,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-
 }
 
 /* ////////////////////////////LATEST NEWS////////////// */
@@ -276,7 +208,7 @@
     gap: 1dvw;
     padding: 1.5dvw;
     position: sticky;
-    top: 5.35dvw;
+    top: 7dvw;
 
 }
 
@@ -298,7 +230,8 @@
 .latest-news div .one p {
     font-size: 0.9dvw;
     font-weight: 600;
-    background-color: rgb(235, 232, 232);
+    background-color: rgb(247, 244, 244);
+    
     padding: 0.3dvw 0.5dvw;
     color: rgb(38, 37, 37);
     cursor: pointer;
@@ -342,6 +275,7 @@
     flex-direction: column;
     gap: 2dvw;
     padding: 1.5dvw;
+    background-color: #fcfdfd;
 }
 
 .spons-nav {
@@ -359,7 +293,7 @@
     cursor: pointer;
 }
 
-.spons-nav div {
+.spons-nav span {
     display: flex;
     flex-direction: row;
     gap: 1dvw;
@@ -374,14 +308,25 @@
     align-items: center;
 }
 
-.sponsored .reader {
+.sponsored div {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
 }
-
-.sponsored .reader h1 {
+.sponsored .reader h1{
     font-size: 1.9dvw;
+    color: rgb(40, 40, 40);    
+}
+.sponsored div ol{
+    font-size: .98dvw;
+    padding-left: 1.3dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 600;
+    line-height: 1.8dvw;
+}
+
+.sponsored div h1 {
+    font-size: 1.5dvw;
     color: rgb(40, 40, 40);
 }
 
@@ -389,59 +334,68 @@
     color: rgb(40, 40, 40);
 }
 
-.sponsored .reader .spons-desc {
+.sponsored div .desc {
     display: flex;
     flex-direction: column;
-    gap: 2dvw;
+    gap: .7dvw;
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
     line-height: 1.8dvw;
 }
 
-.sponsored .reader .spons-desc .bold-text {
+.sponsored div .bold-text {
     font-weight: 700;
     color: rgb(26, 25, 25);
 }
 
-.sponsored .reader .source {
+.sponsored div section{
+    display: flex;
+    flex-direction: column;
+    gap: .3dvw;
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+.sponsored div .source {
     font-size: 1dvw;
     font-weight: 500;
     color: rgb(41, 40, 40);
 }
 
-.sponsored .reader .source p a {
+.sponsored div .source p a {
     text-decoration: none;
     font-weight: 400;
+    color: blue;
 }
 
-.sponsored .reader .source p a:hover {
+.sponsored div .source p a:hover {
     text-decoration: underline;
 }
 
 /* /////////////////////CADRENAL THERAPUTIC , INC/////// */
-.cadrenal-intro {
+/* .cadrenal-intro {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
-}
+} */
 
-.cadrenal-intro h1 {
-    font-size: 1.5dvw;
+.cadrenal-intro .title {
     color: #15803d;
 }
-
-.cadrenal-intro .cadrenal-desc {
+/* 
+.cadrenal div .desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
     line-height: 1.8dvw;
 }
 
-.cadrenal-intro .cadrenal-desc .bold-text {
+.cadrenal-intro div  desc .bold-text {
     font-weight: 700;
     color: rgb(26, 25, 25);
-}
+} */
 
 .cadrenal-intro h4 {
     font-size: 1dvw;
@@ -464,19 +418,19 @@
 }
 
 /* /////////////////////BREAKDOWN////////////////// */
-.breakdown {
+/* .breakdown {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
-}
+} */
 
-.breakdown h1 {
+/* .breakdown h1 {
     font-size: 1.5dvw;
     color: rgb(40, 40, 40);
 
-}
+} */
 
-.breakdown-desc {
+/* .breakdown-desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
@@ -486,7 +440,7 @@
 .breakdown-desc .bold-text {
     font-weight: 700;
     color: rgb(26, 25, 25);
-}
+} */
 
 .breakdown .vid {
     display: flex;
@@ -501,19 +455,19 @@
 }
 
 /* ////////////////TECARFARIN GAME CHANGER/////////// */
-.changer {
+/* .changer {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
-}
+} */
 
-.changer h1 {
+/* .changer h1 {
     font-size: 1.5dvw;
     color: rgb(40, 40, 40);
 
-}
+} */
 
-.changer .changer-desc {
+/* .changer .changer-desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
@@ -524,7 +478,7 @@
     color: rgb(41, 40, 40);
     font-weight: 700;
     color: rgb(26, 25, 25);
-}
+} */
 
 .changer .key-title {
     color: rgb(41, 40, 40);
@@ -562,10 +516,9 @@
 
 .expansion h1 {
     color: #15803d;
-    font-size: 1.5dvw;
 }
 
-.expansion .expansion-desc {
+/* .expansion .expansion-desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
@@ -575,21 +528,21 @@
 .expansion .expansion-desc .bold-text {
     font-weight: 700;
     color: rgb(26, 25, 25);
-}
+} */
 
 /* ///////////////CLINICAL DATA////////// */
-.clinical {
+/* .clinical {
     display: flex;
     flex-direction: column;
     gap: 2dvw;
-}
+} */
 
-.clinical h1 {
+/* .clinical h1 {
     font-size: 1.5dvw;
     color: rgb(40, 40, 40);
-}
+} */
 
-.clinical-desc {
+/* .clinical-desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
@@ -602,38 +555,42 @@
 .clinical-desc .bold-text {
     font-weight: 700;
     color: rgb(26, 25, 25);
-}
+} */
 
-.clinical .graph {
-    display: flex;
-    flex-direction: column;
-    gap: 2dvw;
-}
-
-.clinical .graph p {
-    font-size: 1dvw;
-    color: rgb(41, 40, 40);
-
-}
-
-/* ////////////////////CATALYST///////////// */
-.catalyst {
+.sponsored div .graph {
     display: flex;
     flex-direction: column;
     gap: 1dvw;
 }
 
-.catalyst h1 {
+.sponsored div .graph p {
+    font-size: .95dvw;
+    color: rgb(41, 40, 40);
+}
+
+
+/* ////////////////////CATALYST -1 ///////////// */
+.catalyst {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    padding: 1.5dvw;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    background-color: #f7f8fc;
+}
+
+/* .catalyst h1 {
     color: rgb(41, 40, 40);
     font-size: 1.4dvw;
-}
+} */
 
 .catalyst div{
     display: flex;
     flex-direction:column ;
     gap: .3dvw;
 }
-.catalyst .desc {
+/* .catalyst .desc {
     font-size: 1.1dvw;
     color: rgb(41, 40, 40);
     font-weight: 500;
@@ -642,7 +599,7 @@
 .catalyst .desc .bold-text{
     font-weight: 700;
     color: rgb(41, 40, 40);
-}
+} */
 .catalyst div ul{
     font-size: 1dvw;
     padding-left: 1.4dvw;
@@ -659,7 +616,7 @@
 }
 
 
-
+/* ////////////////CATALYST 2////////////////// */
 
 
 
@@ -678,7 +635,7 @@
     flex-direction: column;
     gap: 2dvw;
     position: sticky;
-    top: 5.35dvw;
+    top: 7dvw;
 }
 
 .stock-information .stock-top {
