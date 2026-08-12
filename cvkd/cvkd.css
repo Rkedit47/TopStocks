@@ -799,71 +799,581 @@
 .brokerage-links a:nth-child(8) {
     color: #2563eb;
 }
-/* DISCLAIMER SECTION */
-.disclaimer-sec{
-  margin-top: 2.917dvw;
-  padding: 2dvw;
-}
-.disclaimer-container{
-  background-color: #F9FAFB;
-  padding: 1.25dvw;
-  display: flex;
-  flex-direction: column;
-  gap: 0.83dvw;
-}
-.disclaimer-container h4{
-  font-weight: 700;
-  font-size: 1.563dvw;
-  line-height: 1.875dvw;
-}
-.disclaimer-container p{
-  font-size: 1dvw;
-  line-height: 1.458dvw;
-}
-.disclaimer-container ul{
-  font-size: 1dvw;
-  line-height: 1.25dvw;
-  padding-left: 1.667dvw;
-}
-.disclaimer-container li{
-  margin-top: 0.8dvw;
-}
-.disclaimer-container p a{
-  font-size: 0.9375dvw;
-  line-height: 1.458dvw;
-  font-weight: 500;
-}
 
 @media (max-width: 1024px) {
 
     /* //////////////////////////// Brokerage Section ////////////////////////////// */
-  .brokerage-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .brokerage-sec h2 {
-    font-size: 2.96dvw;
-    line-height: 3.2dvw;
-  }
-  .brokerage-links {
-    margin: 2.2dvw auto;
-    gap: 2dvw;
-  }
-  .brokerage-links a {
-  font-size: 1.48dvw;
-  }
-  /* Disclaimer */
-  .disclaimer-container h4{
-  font-size: 2.8dvw;
-  line-height: 2.3dvw;
+    .brokerage-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .brokerage-sec h2 {
+        font-size: 2.96dvw;
+        line-height: 3.2dvw;
+    }
+
+    .brokerage-links {
+        margin: 2.2dvw auto;
+        gap: 2dvw;
+    }
+
+    .brokerage-links a {
+        font-size: 1.48dvw;
+    }
 }
-  .disclaimer-container p{
-  font-size: 1.5dvw;
-  line-height: 2dvw;
+
+@media(max-width:546px) {
+    .navbar {
+        padding: 4dvw 3dvw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo-options .logo h1 {
+        font-size: 3.5dvw;
+    }
+
+    .navbar .logo-options .options {
+        display: none;
+    }
+
+    .navbar .login-signin {
+        gap: 2.5dvw;
+    }
+
+    .navbar .login-signin .login {
+        padding: 1.9dvw 2.6dvw;
+        border-radius: 2dvw;
+    }
+
+    .navbar .login-signin .create {
+        padding: 1.9dvw 2.6dvw;
+        border-radius: 2dvw;
+    }
+
+    .stock-alert {
+        padding: 8dvw 3dvw;
+        gap: 2dvw;
+        padding-bottom: 13dvw;
+        margin-bottom: 10dvw;
+    }
+
+    .stock-alert .date {
+        font-size: 2.5dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div {
+        gap: 3dvw;
+    }
+
+    .stock-alert div h1 {
+        font-size: 6.5dvw;
+    }
+
+    .stock-alert .desc {
+        font-size: 3.25dvw;
+        padding-right: 0dvw;
+        line-height: 5dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div button {
+        width: 30dvw;
+        padding: 3dvw 2dvw;
+        border-radius: 2dvw;
+    }
+
+    /* ////////////////////////bottom///////////// */
+    .bottom {
+        flex-direction: column;
+        padding: 2dvw 3dvw;
+        gap: 7dvw;
+    }
+
+    .stock-information {
+        order: 1;
+        position: static;
+        width: 100%;
+    }
+
+    .stock-information .stock-top {
+        gap: 4dvw;
+        padding: 3dvw;
+    }
+
+    .stock-information .stock-top h1 {
+        font-size: 3.7dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div {
+        gap: 1dvw;
+    }
+
+    .stock-information .stock-top div h2 {
+        font-size: 3.3dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div p {
+        font-size: 2.6vw;
+    }
+
+    .stock-bottom {
+        padding: 3dvw 2.5dvw;
+        gap: 3dvw;
+    }
+
+    .stock-bottom div p {
+        font-size: 2.6dvw;
+    }
+
+    .stock-bottom div h4 {
+        font-size: 3.5dvw;
+    }
+
+    .stock-bottom div h4 .usd {
+        font-size: 3dvw;
+    }
+
+    .stock-bottom .percentage {
+        font-size: 2.3dvw;
+        width: 12dvw;
+        font-weight: 500;
+        padding: .4dvw 0;
+        border-radius: 2dvw;
+    }
+
+    /* /////////////////////sponsored///////////// */
+    .sponsored {
+        order: 2;
+        width: 100%;
+        padding: 4dvw;
+        gap: 4vw;
+    }
+
+    .spons-nav .spons {
+        font-size: 2dvw;
+        padding: 1dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .spons-nav span {
+        font-size: 2.6dvw;
+        gap: 3dvw;
+    }
+
+    .sponsored div {
+        gap: 5dvw;
+    }
+
+    .sponsored div h1 {
+        font-size: 3.5dvw;
+    }
+
+    .sponsored .reader h1 {
+        font-size: 4dvw;
+        font-weight: 700;
+    }
+
+    .sponsored div .desc {
+        font-size: 2.7dvw;
+        font-weight: 500;
+        line-height: 5dvw;
+        gap: 4dvw;
+    }
+
+    .sponsored div .source {
+        font-size: 2.4dvw;
+    }
+
+    .sponsored div section {
+        font-size: 2.85dvw;
+        font-weight: 400;
+        line-height: 5dvw;
+    }
+
+    .sponsored div .graph {
+        gap: 3dvw;
+    }
+
+    .sponsored div .graph p {
+        font-size: 2.48dvw;
+    }
+
+    .sponsored div ol {
+        font-size: 2.5dvw;
+        font-weight: 400;
+        gap: 1dvw;
+        padding-left: 3dvw;
+        line-height: 4dvw;
+    }
+
+    .sponsored div ol .bold-text {
+        font-weight: 700;
+        color: rgb(68, 67, 67);
+    }
+
+    /* ////////////CADRENAL//////// */
+    .cadrenal-intro h4 {
+        font-size: 3dvw;
+    }
+
+    .sponsored div ul {
+        font-size: 2.45dvw;
+        gap: 1dvw;
+    }
+
+    .breakdown .vid {
+        gap: 5dvw;
+    }
+
+    .breakdown .vid h2 {
+        font-size: 2.7dvw;
+        font-weight: 600;
+    }
+
+    .changer .key-title {
+        font-size: 2.6dvw;
+    }
+
+
+    .catalyst {
+        padding: 4.5dvw;
+    }
+
+
+
+/* ///////////////////////////LATEST NEWS//////////// */
+    .latest-news {
+        position: static;
+        order: 3;
+        width: 100%;
+        padding: 4dvw;
+        gap: 0dvw;
+    }
+
+    .latest-news h1 {
+        font-size: 3.4dvw;
+        font-weight: 700;
+    }
+
+    .latest-news div {
+        padding: 2dvw 3dvw;
+    }
+
+    .latest-news div .one p {
+        font-size: 2dvw;
+        color: rgb(65, 65, 65);
+        font-weight: 700;
+        padding: 1dvw 2dvw;
+    }
+
+    .latest-news div .one i {
+        display: none;
+    }
+
+    .latest-news div .desc {
+        font-size: 2.5dvw;
+        font-weight: 600;
+        line-height: 4dvw;
+    }
+
+    .latest-news div div {
+        gap: 1.4dvw;
+        font-size: 2dvw;
+    }
+
+
+
 }
-.disclaimer-container ul{
-  font-size: 1.5vw;
-  line-height: 2dvw;
+
+@media(max-width:768px) {
+    .navbar {
+        padding: 1.8dvw 2dvw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo-options {
+        gap: 3dvw;
+    }
+
+    .navbar .logo-options .logo h1 {
+        font-size: 2.5dvw;
+    }
+
+    .navbar .logo-options .options{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .navbar .logo-options .options a {
+        font-size: 1.7dvw;
+        padding: 1.3dvw 1.3dvw;
+        border-radius: 1dvw;
+        font-weight: 700;
+    }
+
+    .navbar .logo-options .options a:hover {
+        color: white;
+        background-color: #32a46f;
+    }
+
+
+    .navbar .login-signin {
+        gap: 2.5dvw;
+    }
+
+    .navbar .login-signin .login {
+        padding: 1.3dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .navbar .login-signin .login:hover {
+        background-color: #32a46f;
+        color: white;
+    }
+
+    .navbar .login-signin .create {
+        padding: 1.3dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .stock-alert {
+        padding: 6dvw 2dvw;
+        padding-bottom: 10dvw;
+        gap: 1dvw;
+        margin-bottom: 6dvw;
+
+    }
+
+    .stock-alert .date {
+        font-size: 2dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div {
+        gap: 1dvw;
+    }
+
+    .stock-alert div h1 {
+        font-size: 6dvw;
+    }
+        .stock-alert .desc {
+        font-size:2.3dvw;
+        line-height: 4dvw;
+        padding-right: 0;
+    }
+
+    .stock-alert div button {
+        width: 23dvw;
+        padding: 2dvw;
+        border-radius: 2dvw;
+    }
+    /* ////////////////////////bottom///////////// */
+    .bottom {
+        flex-direction: column;
+        padding: 2dvw ;
+        gap: 5dvw;
+    }
+
+    .stock-information {
+        order: 1;
+        position: static;
+        width: 100%;
+    }
+
+        .stock-information .stock-top {
+        gap: 3dvw;
+        padding: 3dvw;
+    }
+
+    .stock-information .stock-top h1 {
+        font-size: 2.4dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div {
+        gap: .8dvw;
+    }
+
+    .stock-information .stock-top div h2 {
+        font-size: 2.2dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div p {
+        font-size: 1.7vw;
+    }
+
+    .stock-bottom {
+        padding: 1dvw 2.5dvw;
+        gap: 2dvw;
+        padding-bottom: 3dvw;
+    }
+
+    .stock-bottom div p {
+        font-size: 1.8dvw;
+    }
+
+    .stock-bottom div h4 {
+        font-size: 2.3dvw;
+    }
+
+    .stock-bottom div h4 .usd {
+        font-size:1.9dvw;
+    }
+
+    .stock-bottom .percentage {
+        font-size: 1.6dvw;
+        width: 9dvw;
+        padding: .4dvw 0;
+        border-radius: 2dvw;
+    }
+
+
+        /* /////////////////////sponsored///////////// */
+    .sponsored {
+        order: 2;
+        width: 100%;
+        padding: 3dvw 3dvw;
+        gap: 4vw;
+        border-radius: 2dvw;
+    }
+  .spons-nav .spons {
+        font-size: 1.5dvw;
+        padding: .8dvw 2dvw;
+        border-radius: 1.5dvw;
+    }
+
+    .spons-nav span {
+        font-size: 1.8dvw;
+        gap: 3dvw;
+    }
+
+    .sponsored div {
+        gap: 3dvw;
+    }
+
+    .sponsored div h1 {
+        font-size: 2.5dvw;
+    }
+
+    .sponsored .reader h1 {
+        font-size: 3.5dvw;
+        font-weight: 600;
+    }
+
+    .sponsored div .desc {
+        font-size: 2dvw;
+        font-weight: 500;
+        line-height: 3dvw;
+        gap: 4dvw;
+    }
+        .sponsored div .source {
+        font-size: 1.7dvw;
+    }
+
+    .sponsored div section {
+        font-size: 2dvw;
+        font-weight: 400;
+        line-height: 3dvw;
+    }
+
+    .sponsored div .graph {
+        gap: 3dvw;
+    }
+
+    .sponsored div .graph p {
+        font-size: 1.8dvw;
+    }
+    .sponsored div ol {
+        font-size: 1.8dvw;
+        font-weight: 400;
+        gap: 0dvw;
+        padding-left: 3dvw;
+        line-height: 4dvw;
+    }
+
+    .sponsored div ol .bold-text {
+        font-weight: 700;
+        color: rgb(68, 67, 67);
+    }
+
+        /* ////////////CADRENAL//////// */
+    .cadrenal-intro h4 {
+        font-size: 1.9dvw;
+    }
+
+    .sponsored div ul {
+        font-size: 1.8dvw;
+        gap: 1dvw;
+        padding-left: 2dvw;
+    }
+
+    .breakdown .vid {
+        gap: 2dvw;
+    }
+
+    .breakdown .vid h2 {
+        font-size: 2dvw;
+        font-weight: 600;
+    }
+
+    .changer .key-title {
+        font-size: 2.6dvw;
+    }
+
+
+    .catalyst {
+        padding: 4.5dvw;
+    }
+
+    .expansion{
+        padding: 3dvw;
+    }
+    .expansion .title {
+        color: #15803d;
+    }
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////LATEST NEWS//////////// */
+    .latest-news {
+        position: static;
+        order: 3;
+        width: 100%;
+        padding: 4dvw;
+        gap: 0dvw;
+    }
+.latest-news h1{
+    font-size: 2.5dvw;
 }
+.latest-news div {
+    padding: 1.3dvw;
+}
+.latest-news div .one p{
+    font-size: 1.6dvw;
+}
+.latest-news div .one i{
+    display: none;
+}
+.latest-news div .desc{
+    font-size: 1.9dvw;
+    padding: 1dvw 3dvw;
+    line-height: 3dvw;
+}
+.latest-news div .desc:hover{
+    color: #15803d;
 }
     .latest-news div div{
         font-size: 1.5dvw;
