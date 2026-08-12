@@ -1,278 +1,1381 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "open sans", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans", system-ui, sans-serif;
 }
+
+
+
 .navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.2dvw 1dvw;
-  border-bottom: 0.1dvw solid rgb(208, 206, 206);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2dvw 1dvw;
+    border-bottom: .1dvw solid rgb(208, 206, 206);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
+
 .navbar .logo-options {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2dvw;
+
 }
+
 .navbar .logo-options .logo h1 {
-  color: #32a46f;
-  font-size: 1.35dvw;
+    color: #32a46f;
+    font-size: 1.35dvw;
+    cursor: pointer;
 }
+
 .navbar .logo-options .options {
-  display: flex;
-  flex-direction: row;
-  gap: 1.9dvw;
+    display: flex;
+    flex-direction: row;
+    gap: 1.9dvw;
 }
+
 .navbar .logo-options .options a {
-  text-decoration: none;
-  color: gray;
-  font-size: 0.95dvw;
-  font-weight: 700;
-  border-radius: 0.8dvw;
-  padding: 0.7dvw 1dvw;
-  transition: background 0.3s ease;
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    font-size: .95dvw;
+    font-weight: 700;
+    border-radius: .8dvw;
+    padding: .7dvw 1dvw;
+    transition: background 0.3s ease;
+
 }
+
 .navbar .logo-options .options a:hover {
-  color: white;
-  background-color: #32a46f;
+    color: white;
+    background-color: #32a46f;
 }
+
 .navbar .login-signin {
-  display: flex;
-  flex-direction: row;
-  gap: 1dvw;
+    display: flex;
+    flex-direction: row;
+    gap: 1dvw;
+
 }
+
 .navbar .login-signin .login {
-  border: none;
-  outline: none;
-  background-color: #32a46f;
-  padding: 0.7dvw 1.2dvw;
-  border-radius: 0.8dvw;
-  color: white;
-  font-weight: 700;
+    border: none;
+    outline: none;
+    padding: .7dvw 1.2dvw;
+    border-radius: .8dvw;
+    font-weight: 700;
+    color: rgb(150, 150, 150);
+    background-color: white;
+    cursor: pointer;
 }
+
+.navbar .login-signin .login:hover {
+    background-color: #32a46f;
+    color: white;
+}
+
 .navbar .login-signin .create {
-  background-color: #32a46f;
-  border: 0.1dvw solid #1f985f;
-  padding: 0.7dvw 1dvw;
-  color: white;
-  font-weight: 700;
-  border-radius: 0.8dvw;
+    background-color: #32a46f;
+    border: .1dvw solid #1f985f;
+    padding: .7dvw 1.2dvw;
+    color: white;
+    font-weight: 700;
+    border-radius: .8dvw;
+    cursor: pointer;
 }
 
 /* ///////////////////////////Main page/////////////////// */
 .stock-alert {
-  display: flex;
-  flex-direction: column;
-  padding: 7dvw 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 7dvw 1dvw;
+    background-color: #f7f8fc;
+    margin-bottom: 0dvw;
+
 }
+
 .stock-alert .date {
-  font-size: 1dvw;
-  font-weight: 500;
-  color: gray;
+    font-size: 1dvw;
+    font-weight: 500;
+    color: gray;
 }
+
 .stock-alert div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.4dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4dvw;
 }
+
 .stock-alert div h1 {
-  font-size: 3.35dvw;
+    font-size: 3.35dvw;
 }
+
 .stock-alert div h1 .nasdaq {
-  color: gray;
+    color: gray;
 }
+
 .stock-alert div h1 .nasdaq .cvkd {
-  color: #1f985f;
+    color: #1f985f;
 }
+
 .stock-alert .desc {
-  color: rgb(107, 107, 107);
-  font-size: 1.27dvw;
-  padding-right: 42dvw;
-  line-height: 2dvw;
+    color: rgb(107, 107, 107);
+    font-size: 1.27dvw;
+    padding-right: 42dvw;
+    line-height: 2dvw;
 }
+
 .stock-alert div button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 10dvw;
-  padding: 0.9dvw;
-  outline: none;
-  border: none;
-  gap: 1dvw;
-  color: rgb(59, 58, 58);
-  font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10dvw;
+    padding: 0.9dvw;
+    outline: none;
+    border: none;
+    gap: 1dvw;
+    color: rgb(59, 58, 58);
+    font-weight: 600;
+    border-radius: 1dvw;
+
+}
+
+.stock-alert .date {
+    font-size: 1dvw;
+    font-weight: 500;
+    color: gray;
+}
+
+.stock-alert div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4dvw;
+}
+
+.stock-alert div h1 {
+    font-size: 3.35dvw;
+}
+
+.stock-alert div h1 .nasdaq {
+    color: gray;
+}
+
+.stock-alert div h1 .nasdaq .cvkd {
+    color: #1f985f;
+}
+
+.stock-alert .desc {
+    color: rgb(107, 107, 107);
+    font-size: 1.27dvw;
+    padding-right: 42dvw;
+    line-height: 2dvw;
+}
+
+.stock-alert div button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10dvw;
+    padding: .9dvw;
+    outline: none;
+    border: none;
+    gap: 1dvw;
+    color: rgb(59, 58, 58);
+    font-weight: 600;
+}
+
+/* ////////////////////////bottom///////////// */
+.bottom {
+    padding: 0 1dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 /* ////////////////////////////LATEST NEWS////////////// */
-.bottom {
-  padding: 0 1dvw;
-}
+
 .latest-news {
-  width: 23.1%;
-  border: 0.1dvw solid rgb(32, 32, 32);
-  padding: 1.5dvw;
-}
-.latest-news h1 {
-  font-size: 1.4dvw;
-}
-.latest-news div {
-  padding: 1dvw;
-}
-.latest-news div .one {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.latest-news div .one p {
-  font-size: 0.9dvw;
-  font-weight: 600;
-  background-color: rgb(235, 232, 232);
-  padding: 0.3dvw 0.5dvw;
-  color: rgb(38, 37, 37);
-  cursor: pointer;
-}
-.latest-news div .desc {
-  font-size: 1dvw;
-  font-weight: 500;
-  line-height: 1.7dvw;
-}
-.latest-news div .desc:hover {
-  color: #1f985f;
-  background-color: rgb(241, 240, 240);
-  cursor: pointer;
-}
-.latest-news div div {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5dvw;
-  font-size: 0.9dvw;
-  align-items: center;
-  color: gray;
-}
-.latest-news div div p {
-  font-size: 0.9dvw;
+    width: 23.1%;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    padding: 1.5dvw;
+    position: sticky;
+    top: 7dvw;
+
 }
 
-.stock-information {
-  width: 23.1%;
-  border: 0.1dvw solid rgb(32, 32, 32);
+.latest-news h1 {
+    font-size: 1.4dvw;
+    color: rgb(40, 40, 40);
 }
+
+.latest-news div {
+    padding: 1dvw;
+}
+
+.latest-news div .one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.latest-news div .one p {
+    font-size: 0.9dvw;
+    font-weight: 600;
+    background-color: rgb(247, 244, 244);
+    padding: 0.3dvw 0.5dvw;
+    color: rgb(38, 37, 37);
+    cursor: pointer;
+}
+
+.latest-news div .one i {
+    display: flex;
+}
+
+.latest-news div .desc {
+    font-size: 1dvw;
+    font-weight: 500;
+    line-height: 1.7dvw;
+    color: rgb(56, 54, 54);
+}
+
+.latest-news div .desc:hover {
+    color: #1f985f;
+    background-color: rgb(241, 240, 240);
+    cursor: pointer;
+}
+
+.latest-news div div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5dvw;
+    font-size: 0.9dvw;
+    align-items: center;
+    color: gray;
+}
+
+/* .latest-news div div p {
+    font-size: 0.9dvw;
+} */
+
+
+
+/* ///////////////SPONSORED////////////////// */
+.sponsored {
+    width: 49%;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    padding: 1.5dvw;
+    background-color: #fcfdfd;
+}
+
+.spons-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spons-nav .spons {
+    font-size: 0.9dvw;
+    font-weight: 600;
+    background-color: rgb(235, 232, 232);
+    padding: 0.3dvw 0.5dvw;
+    color: rgb(38, 37, 37);
+    cursor: pointer;
+    border-radius: .4dvw;
+}
+
+.spons-nav span {
+    display: flex;
+    flex-direction: row;
+    gap: 1dvw;
+    font-size: .97dvw;
+    color: rgb(104, 103, 103);
+}
+
+.spons-nav div p {
+    display: flex;
+    flex-direction: row;
+    gap: .5dvw;
+    align-items: center;
+}
+
+.sponsored div {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.sponsored .reader h1 {
+    font-size: 1.9dvw;
+    color: rgb(40, 40, 40);
+}
+
+.sponsored div ol {
+    font-size: .98dvw;
+    padding-left: 1.3dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 600;
+    line-height: 1.8dvw;
+}
+
+.sponsored div h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+}
+
+.sponsored .reader h4 {
+    color: rgb(40, 40, 40);
+}
+
+.sponsored div .desc {
+    display: flex;
+    flex-direction: column;
+    gap: .7dvw;
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.sponsored div .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+}
+
+.sponsored div section {
+    display: flex;
+    flex-direction: column;
+    gap: .3dvw;
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.sponsored div .source {
+    font-size: 1dvw;
+    font-weight: 500;
+    color: rgb(41, 40, 40);
+}
+
+.sponsored div .source p a {
+    text-decoration: none;
+    font-weight: 400;
+    color: blue;
+}
+
+.sponsored div .source p a:hover {
+    text-decoration: underline;
+}
+
+.sponsored div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    color: rgb(41, 40, 40);
+    padding-left: 1.2dvw;
+    font-size: 1dvw;
+    font-weight: 500;
+}
+
+/* /////////////////////CADRENAL THERAPUTIC , INC/////// */
+/* .cadrenal-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+} */
+
+.cadrenal-intro .title {
+    color: #15803d;
+}
+
+/* 
+.cadrenal div .desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.cadrenal-intro div  desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+} */
+
+.cadrenal-intro h4 {
+    font-size: 1dvw;
+    color: rgb(41, 40, 40);
+}
+
+/* .cadrenal-intro ul {
+    display: flex;
+    flex-direction: column;
+    gap: .7dvw;
+    font-size: 1dvw;
+    font-weight: 500;
+    padding-left: 1.3dvw;
+} */
+
+.cadrenal-intro ul .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+
+}
+
+/* /////////////////////BREAKDOWN////////////////// */
+/* .breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+} */
+
+/* .breakdown h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+
+} */
+
+/* .breakdown-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.breakdown-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+} */
+
+.breakdown .vid {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    text-align: center;
+}
+
+.breakdown .vid h2 {
+    font-weight: 500;
+    font-size: 1.2dvw;
+}
+
+/* ////////////////TECARFARIN GAME CHANGER/////////// */
+/* .changer {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+} */
+
+/* .changer h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+
+} */
+
+/* .changer .changer-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.changer .changer-desc .bold-text {
+    color: rgb(41, 40, 40);
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+} */
+
+.changer .key-title {
+    color: rgb(41, 40, 40);
+    font-weight: 700;
+    font-size: 1.1dvw;
+}
+
+/* .changer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    color: rgb(41, 40, 40);
+    padding-left: 1.2dvw;
+    font-size: 1dvw;
+    font-weight: 500;
+} */
+
+.changer ul .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+
+}
+
+/* ////////////EXPANSION///////////////// */
+.expansion {
+    padding: 1dvw;
+    border: .1dvw solid rgb(224, 222, 222);
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    border-radius: 1dvw;
+
+}
+
+.expansion h1 {
+    color: #15803d;
+}
+
+/* .expansion .expansion-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+
+.expansion .expansion-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+} */
+
+/* ///////////////CLINICAL DATA////////// */
+/* .clinical {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+} */
+
+/* .clinical h1 {
+    font-size: 1.5dvw;
+    color: rgb(40, 40, 40);
+} */
+
+/* .clinical-desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+}
+
+.clinical-desc .bold-text {
+    font-weight: 700;
+    color: rgb(26, 25, 25);
+} */
+
+.sponsored div .graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+}
+
+.sponsored div .graph p {
+    font-size: .95dvw;
+    color: rgb(41, 40, 40);
+}
+
+
+/* ////////////////////CATALYST -1 ///////////// */
+.catalyst {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    padding: 1.5dvw;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    background-color: #f7f8fc;
+}
+
+/* .catalyst h1 {
+    color: rgb(41, 40, 40);
+    font-size: 1.4dvw;
+} */
+
+.catalyst div {
+    display: flex;
+    flex-direction: column;
+    gap: .3dvw;
+}
+
+/* .catalyst .desc {
+    font-size: 1.1dvw;
+    color: rgb(41, 40, 40);
+    font-weight: 500;
+    line-height: 1.8dvw;
+}
+.catalyst .desc .bold-text{
+    font-weight: 700;
+    color: rgb(41, 40, 40);
+} */
+.catalyst div ul {
+    font-size: 1dvw;
+    padding-left: 1.4dvw;
+    font-weight: 500;
+}
+
+.catalyst div ul .bold-text {
+    font-weight: 700;
+    color: rgb(41, 40, 40);
+
+}
+
+.catalyst .phrase {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.sponsored div ol {
+    font-size: 1dvw;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: .4dvw;
+}
+
+.sponsored div ol .bold-text {
+    font-weight: 700;
+    color: rgb(68, 67, 67);
+}
+
+/* ///////////////////STOCK INFORMATION////////////// */
+
+
+.stock-information {
+    width: 23.1%;
+    border: .1dvw solid rgb(224, 222, 222);
+    border-radius: 1dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    position: sticky;
+    top: 7dvw;
+}
+
+.stock-information .stock-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2dvw;
+    border-bottom: .1dvw solid rgb(226, 224, 224);
+    padding: 1.5dvw;
+}
+
+.stock-information .stock-top h1 {
+    font-size: 1.4dvw;
+    color: rgb(40, 40, 40);
+}
+
+.stock-information .stock-top div {
+    display: flex;
+    flex-direction: column;
+    gap: .2dvw;
+}
+
+.stock-information .stock-top div h2 {
+    font-size: 1.4dvw;
+    color: rgb(40, 40, 40);
+
+}
+
+.stock-information .stock-top div p {
+    font-size: .95dvw;
+    color: gray;
+}
+
+
+.stock-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
+    border-bottom: .1dvw solid rgb(226, 224, 224);
+    padding: 2dvw 0;
+
+}
+
+.stock-bottom div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5dvw;
+}
+
+.stock-bottom div p {
+    font-size: .95dvw;
+    color: gray;
+}
+
+.stock-bottom div h4 .usd {
+    color: gray;
+    font-weight: 400;
+}
+
+.stock-bottom .percentage {
+    text-align: center;
+    font-size: .85dvw;
+    color: #15803d;
+    border: .1dvw solid #7edfa2;
+    background-color: #c9f1d8;
+    width: 4dvw;
+    padding: .1dvw 0;
+    border-radius: .8dvw;
+    margin-left: auto;
+    margin-right: 1dvw;
+}
+
+
 /* //////////////////////////// Brokerage Section ////////////////////////////// */
 .brokerage-sec {
-  margin-top: 2.917dvw;
-  text-align: center;
+    margin-top: 2.917dvw;
+    text-align: center;
 }
+
 .brokerage-sec h2 {
-  font-size: 2.326dvw;
-  line-height: 2.8dvw;
-  color: #1f2f2e;
-  font-weight: 700;
+    font-size: 2.326dvw;
+    line-height: 2.8dvw;
+    color: #1f2f2e;
+    font-weight: 700;
 }
+
 .brokerage-links {
-  margin: 1dvw 16dvw;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25dvw;
-  justify-content: center;
-  align-items: center;
+    margin: 1dvw 16dvw;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25dvw;
+    justify-content: center;
+    align-items: center;
 }
+
 .brokerage-links a {
-  font-size: 0.8dvw;
-  line-height: 1.25dvw;
-  font-weight: 700;
-  text-decoration: none;
+    font-size: 0.8dvw;
+    line-height: 1.25dvw;
+    font-weight: 700;
+    text-decoration: none;
 }
+
 .brokerage-links a:nth-child(1) {
-  color: #22c55e;
+    color: #22c55e;
 }
+
 .brokerage-links a:nth-child(2) {
-  color: #9333ea;
+    color: #9333ea;
 }
+
 .brokerage-links a:nth-child(3) {
-  color: #ef4444;
+    color: #ef4444;
 }
+
 .brokerage-links a:nth-child(4) {
-  color: #3b82f6;
+    color: #3b82f6;
 }
+
 .brokerage-links a:nth-child(5) {
-  color: #1f242e;
+    color: #1f242e;
 }
+
 .brokerage-links a:nth-child(6) {
-  color: #15803d;
+    color: #15803d;
 }
+
 .brokerage-links a:nth-child(7) {
-  color: #dc2626;
+    color: #dc2626;
 }
+
 .brokerage-links a:nth-child(8) {
-  color: #2563eb;
-}
-/* DISCLAIMER SECTION */
-.disclaimer-sec{
-  margin-top: 2.917dvw;
-  padding: 2dvw;
-}
-.disclaimer-container{
-  background-color: #F9FAFB;
-  padding: 1.25dvw;
-  display: flex;
-  flex-direction: column;
-  gap: 0.83dvw;
-}
-.disclaimer-container h4{
-  font-weight: 700;
-  font-size: 1.563dvw;
-  line-height: 1.875dvw;
-}
-.disclaimer-container p{
-  font-size: 1dvw;
-  line-height: 1.458dvw;
-}
-.disclaimer-container ul{
-  font-size: 1dvw;
-  line-height: 1.25dvw;
-  padding-left: 1.667dvw;
-}
-.disclaimer-container li{
-  margin-top: 0.8dvw;
-}
-.disclaimer-container p a{
-  font-size: 0.9375dvw;
-  line-height: 1.458dvw;
-  font-weight: 500;
+    color: #2563eb;
 }
 
 @media (max-width: 1024px) {
+
     /* //////////////////////////// Brokerage Section ////////////////////////////// */
-  .brokerage-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .brokerage-sec h2 {
-    font-size: 2.96dvw;
-    line-height: 3.2dvw;
-  }
-  .brokerage-links {
-    margin: 2.2dvw auto;
-    gap: 2dvw;
-  }
-  .brokerage-links a {
-  font-size: 1.48dvw;
-  }
-  /* Disclaimer */
-  .disclaimer-container h4{
-  font-size: 2.8dvw;
-  line-height: 2.3dvw;
+    .brokerage-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .brokerage-sec h2 {
+        font-size: 2.96dvw;
+        line-height: 3.2dvw;
+    }
+
+    .brokerage-links {
+        margin: 2.2dvw auto;
+        gap: 2dvw;
+    }
+
+    .brokerage-links a {
+        font-size: 1.48dvw;
+    }
 }
-  .disclaimer-container p{
-  font-size: 1.5dvw;
-  line-height: 2dvw;
+
+@media(max-width:546px) {
+    .navbar {
+        padding: 4dvw 3dvw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo-options .logo h1 {
+        font-size: 3.5dvw;
+    }
+
+    .navbar .logo-options .options {
+        display: none;
+    }
+
+    .navbar .login-signin {
+        gap: 2.5dvw;
+    }
+
+    .navbar .login-signin .login {
+        padding: 1.9dvw 2.6dvw;
+        border-radius: 2dvw;
+    }
+
+    .navbar .login-signin .create {
+        padding: 1.9dvw 2.6dvw;
+        border-radius: 2dvw;
+    }
+
+    .stock-alert {
+        padding: 8dvw 3dvw;
+        gap: 2dvw;
+        padding-bottom: 13dvw;
+        margin-bottom: 10dvw;
+    }
+
+    .stock-alert .date {
+        font-size: 2.5dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div {
+        gap: 3dvw;
+    }
+
+    .stock-alert div h1 {
+        font-size: 6.5dvw;
+    }
+
+    .stock-alert .desc {
+        font-size: 3.25dvw;
+        padding-right: 0dvw;
+        line-height: 5dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div button {
+        width: 30dvw;
+        padding: 3dvw 2dvw;
+        border-radius: 2dvw;
+    }
+
+    /* ////////////////////////bottom///////////// */
+    .bottom {
+        flex-direction: column;
+        padding: 2dvw 3dvw;
+        gap: 7dvw;
+    }
+
+    .stock-information {
+        order: 1;
+        position: static;
+        width: 100%;
+    }
+
+    .stock-information .stock-top {
+        gap: 4dvw;
+        padding: 3dvw;
+    }
+
+    .stock-information .stock-top h1 {
+        font-size: 3.7dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div {
+        gap: 1dvw;
+    }
+
+    .stock-information .stock-top div h2 {
+        font-size: 3.3dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div p {
+        font-size: 2.6vw;
+    }
+
+    .stock-bottom {
+        padding: 3dvw 2.5dvw;
+        gap: 3dvw;
+    }
+
+    .stock-bottom div p {
+        font-size: 2.6dvw;
+    }
+
+    .stock-bottom div h4 {
+        font-size: 3.5dvw;
+    }
+
+    .stock-bottom div h4 .usd {
+        font-size: 3dvw;
+    }
+
+    .stock-bottom .percentage {
+        font-size: 2.3dvw;
+        width: 12dvw;
+        font-weight: 500;
+        padding: .4dvw 0;
+        border-radius: 2dvw;
+    }
+
+    /* /////////////////////sponsored///////////// */
+    .sponsored {
+        order: 2;
+        width: 100%;
+        padding: 4dvw;
+        gap: 4vw;
+    }
+
+    .spons-nav .spons {
+        font-size: 2dvw;
+        padding: 1dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .spons-nav span {
+        font-size: 2.6dvw;
+        gap: 3dvw;
+    }
+
+    .sponsored div {
+        gap: 5dvw;
+    }
+
+    .sponsored div h1 {
+        font-size: 3.5dvw;
+    }
+
+    .sponsored .reader h1 {
+        font-size: 4dvw;
+        font-weight: 700;
+    }
+
+    .sponsored div .desc {
+        font-size: 2.7dvw;
+        font-weight: 500;
+        line-height: 5dvw;
+        gap: 4dvw;
+    }
+
+    .sponsored div .source {
+        font-size: 2.4dvw;
+    }
+
+    .sponsored div section {
+        font-size: 2.85dvw;
+        font-weight: 400;
+        line-height: 5dvw;
+    }
+
+    .sponsored div .graph {
+        gap: 3dvw;
+    }
+
+    .sponsored div .graph p {
+        font-size: 2.48dvw;
+    }
+
+    .sponsored div ol {
+        font-size: 2.5dvw;
+        font-weight: 400;
+        gap: 1dvw;
+        padding-left: 3dvw;
+        line-height: 4dvw;
+    }
+
+    .sponsored div ol .bold-text {
+        font-weight: 700;
+        color: rgb(68, 67, 67);
+    }
+
+    /* ////////////CADRENAL//////// */
+    .cadrenal-intro h4 {
+        font-size: 3dvw;
+    }
+
+    .sponsored div ul {
+        font-size: 2.45dvw;
+        gap: 1dvw;
+    }
+
+    .breakdown .vid {
+        gap: 5dvw;
+    }
+
+    .breakdown .vid h2 {
+        font-size: 2.7dvw;
+        font-weight: 600;
+    }
+
+    .changer .key-title {
+        font-size: 2.6dvw;
+    }
+
+
+    .catalyst {
+        padding: 4.5dvw;
+    }
+
+
+
+/* ///////////////////////////LATEST NEWS//////////// */
+    .latest-news {
+        position: static;
+        order: 3;
+        width: 100%;
+        padding: 4dvw;
+        gap: 0dvw;
+    }
+
+    .latest-news h1 {
+        font-size: 3.4dvw;
+        font-weight: 700;
+    }
+
+    .latest-news div {
+        padding: 2dvw 3dvw;
+    }
+
+    .latest-news div .one p {
+        font-size: 2dvw;
+        color: rgb(65, 65, 65);
+        font-weight: 700;
+        padding: 1dvw 2dvw;
+    }
+
+    .latest-news div .one i {
+        display: none;
+    }
+
+    .latest-news div .desc {
+        font-size: 2.5dvw;
+        font-weight: 600;
+        line-height: 4dvw;
+    }
+
+    .latest-news div div {
+        gap: 1.4dvw;
+        font-size: 2dvw;
+    }
+
+
+
 }
-.disclaimer-container ul{
-  font-size: 1.5vw;
-  line-height: 2dvw;
+
+@media(max-width:768px) {
+    .navbar {
+        padding: 1.8dvw 2dvw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .logo-options {
+        gap: 3dvw;
+    }
+
+    .navbar .logo-options .logo h1 {
+        font-size: 2.5dvw;
+    }
+
+    .navbar .logo-options .options{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .navbar .logo-options .options a {
+        font-size: 1.7dvw;
+        padding: 1.3dvw 1.3dvw;
+        border-radius: 1dvw;
+        font-weight: 700;
+    }
+
+    .navbar .logo-options .options a:hover {
+        color: white;
+        background-color: #32a46f;
+    }
+
+
+    .navbar .login-signin {
+        gap: 2.5dvw;
+    }
+
+    .navbar .login-signin .login {
+        padding: 1.3dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .navbar .login-signin .login:hover {
+        background-color: #32a46f;
+        color: white;
+    }
+
+    .navbar .login-signin .create {
+        padding: 1.3dvw 2dvw;
+        border-radius: 1dvw;
+    }
+
+    .stock-alert {
+        padding: 6dvw 2dvw;
+        padding-bottom: 10dvw;
+        gap: 1dvw;
+        margin-bottom: 6dvw;
+
+    }
+
+    .stock-alert .date {
+        font-size: 2dvw;
+        font-weight: 400;
+    }
+
+    .stock-alert div {
+        gap: 1dvw;
+    }
+
+    .stock-alert div h1 {
+        font-size: 6dvw;
+    }
+        .stock-alert .desc {
+        font-size:2.3dvw;
+        line-height: 4dvw;
+        padding-right: 0;
+    }
+
+    .stock-alert div button {
+        width: 23dvw;
+        padding: 2dvw;
+        border-radius: 2dvw;
+    }
+    /* ////////////////////////bottom///////////// */
+    .bottom {
+        flex-direction: column;
+        padding: 2dvw ;
+        gap: 5dvw;
+    }
+
+    .stock-information {
+        order: 1;
+        position: static;
+        width: 100%;
+    }
+
+        .stock-information .stock-top {
+        gap: 3dvw;
+        padding: 3dvw;
+    }
+
+    .stock-information .stock-top h1 {
+        font-size: 2.4dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div {
+        gap: .8dvw;
+    }
+
+    .stock-information .stock-top div h2 {
+        font-size: 2.2dvw;
+        font-weight: 600;
+    }
+
+    .stock-information .stock-top div p {
+        font-size: 1.7vw;
+    }
+
+    .stock-bottom {
+        padding: 1dvw 2.5dvw;
+        gap: 2dvw;
+        padding-bottom: 3dvw;
+    }
+
+    .stock-bottom div p {
+        font-size: 1.8dvw;
+    }
+
+    .stock-bottom div h4 {
+        font-size: 2.3dvw;
+    }
+
+    .stock-bottom div h4 .usd {
+        font-size:1.9dvw;
+    }
+
+    .stock-bottom .percentage {
+        font-size: 1.6dvw;
+        width: 9dvw;
+        padding: .4dvw 0;
+        border-radius: 2dvw;
+    }
+
+
+        /* /////////////////////sponsored///////////// */
+    .sponsored {
+        order: 2;
+        width: 100%;
+        padding: 3dvw 3dvw;
+        gap: 4vw;
+        border-radius: 2dvw;
+    }
+  .spons-nav .spons {
+        font-size: 1.5dvw;
+        padding: .8dvw 2dvw;
+        border-radius: 1.5dvw;
+    }
+
+    .spons-nav span {
+        font-size: 1.8dvw;
+        gap: 3dvw;
+    }
+
+    .sponsored div {
+        gap: 3dvw;
+    }
+
+    .sponsored div h1 {
+        font-size: 2.5dvw;
+    }
+
+    .sponsored .reader h1 {
+        font-size: 3.5dvw;
+        font-weight: 600;
+    }
+
+    .sponsored div .desc {
+        font-size: 2dvw;
+        font-weight: 500;
+        line-height: 3dvw;
+        gap: 4dvw;
+    }
+        .sponsored div .source {
+        font-size: 1.7dvw;
+    }
+
+    .sponsored div section {
+        font-size: 2dvw;
+        font-weight: 400;
+        line-height: 3dvw;
+    }
+
+    .sponsored div .graph {
+        gap: 3dvw;
+    }
+
+    .sponsored div .graph p {
+        font-size: 1.8dvw;
+    }
+    .sponsored div ol {
+        font-size: 1.8dvw;
+        font-weight: 400;
+        gap: 0dvw;
+        padding-left: 3dvw;
+        line-height: 4dvw;
+    }
+
+    .sponsored div ol .bold-text {
+        font-weight: 700;
+        color: rgb(68, 67, 67);
+    }
+
+        /* ////////////CADRENAL//////// */
+    .cadrenal-intro h4 {
+        font-size: 1.9dvw;
+    }
+
+    .sponsored div ul {
+        font-size: 1.8dvw;
+        gap: 1dvw;
+        padding-left: 2dvw;
+    }
+
+    .breakdown .vid {
+        gap: 2dvw;
+    }
+
+    .breakdown .vid h2 {
+        font-size: 2dvw;
+        font-weight: 600;
+    }
+
+    .changer .key-title {
+        font-size: 2.6dvw;
+    }
+
+
+    .catalyst {
+        padding: 4.5dvw;
+    }
+
+    .expansion{
+        padding: 3dvw;
+    }
+    .expansion .title {
+        color: #15803d;
+    }
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////LATEST NEWS//////////// */
+    .latest-news {
+        position: static;
+        order: 3;
+        width: 100%;
+        padding: 4dvw;
+        gap: 0dvw;
+    }
+.latest-news h1{
+    font-size: 2.5dvw;
 }
+.latest-news div {
+    padding: 1.3dvw;
+}
+.latest-news div .one p{
+    font-size: 1.6dvw;
+}
+.latest-news div .one i{
+    display: none;
+}
+.latest-news div .desc{
+    font-size: 1.9dvw;
+    padding: 1dvw 3dvw;
+    line-height: 3dvw;
+}
+.latest-news div .desc:hover{
+    color: #15803d;
+}
+    .latest-news div div{
+        font-size: 1.5dvw;
+    }
 }
