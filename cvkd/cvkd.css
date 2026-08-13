@@ -799,6 +799,40 @@
 .brokerage-links a:nth-child(8) {
     color: #2563eb;
 }
+/* DISCLAIMER SECTION */
+.disclaimer-sec{
+  margin-top: 2.917dvw;
+  padding: 2dvw;
+}
+.disclaimer-container{
+  background-color: #F9FAFB;
+  padding: 1.25dvw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.83dvw;
+}
+.disclaimer-container h4{
+  font-weight: 700;
+  font-size: 1.563dvw;
+  line-height: 1.875dvw;
+}
+.disclaimer-container p{
+  font-size: 1dvw;
+  line-height: 1.458dvw;
+}
+.disclaimer-container ul{
+  font-size: 1dvw;
+  line-height: 1.25dvw;
+  padding-left: 1.667dvw;
+}
+.disclaimer-container li{
+  margin-top: 0.8dvw;
+}
+.disclaimer-container p a{
+  font-size: 0.9375dvw;
+  line-height: 1.458dvw;
+  font-weight: 500;
+}
 
 @media (max-width: 1024px) {
 
@@ -820,6 +854,19 @@
     .brokerage-links a {
         font-size: 1.48dvw;
     }
+      /* Disclaimer */
+  .disclaimer-container h4{
+  font-size: 2.8dvw;
+  line-height: 2.3dvw;
+}
+  .disclaimer-container p{
+  font-size: 1.5dvw;
+  line-height: 2dvw;
+}
+.disclaimer-container ul{
+  font-size: 1.5vw;
+  line-height: 2dvw;
+}
 }
 
 @media(max-width:546px) {
